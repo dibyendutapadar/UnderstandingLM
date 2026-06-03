@@ -19,8 +19,28 @@ from collections import Counter
 import vocab as V
 
 
+TERMINATORS = {".", "?"}
+
+
 def tokenize(line):
     return line.strip().split()
+
+
+def split_sentences(tokens):
+    """Split a token stream into sentences at '.' / '?' (terminator kept).
+
+    Lets us feed multi-sentence story lines through the same checker as single
+    template sentences, and salvage the valid sentences out of a story that
+    contains one stray out-of-vocab word."""
+    sents, cur = [], []
+    for t in tokens:
+        cur.append(t)
+        if t in TERMINATORS:
+            sents.append(cur)
+            cur = []
+    if cur:  # trailing fragment with no terminator
+        sents.append(cur)
+    return sents
 
 
 def validate_sentence(tokens):
@@ -53,24 +73,24 @@ def main():
         for line in fin:
             if not line.strip():
                 continue
-            tokens = tokenize(line)
-            ok, bad = validate_sentence(tokens)
-            if not ok:
-                n_rejected += 1
-                if len(rejection_examples) < 10:
-                    rejection_examples.append(
-                        {"text": line.strip(), "unknown": sorted(set(bad))}
-                    )
-                continue
-            n_valid += 1
-            token_freq.update(tokens)
-            text = " ".join(tokens)
-            fout.write(json.dumps({"text": text, "tokens": tokens}) + "\n")
-            # reservoir sample for the frontend Data page
-            if len(samples) < SAMPLE_K:
-                samples.append(text)
-            elif rng.random() < SAMPLE_K / n_valid:
-                samples[rng.randrange(SAMPLE_K)] = text
+            for tokens in split_sentences(tokenize(line)):
+                ok, bad = validate_sentence(tokens)
+                if not ok:
+                    n_rejected += 1
+                    if len(rejection_examples) < 10:
+                        rejection_examples.append(
+                            {"text": " ".join(tokens), "unknown": sorted(set(bad))}
+                        )
+                    continue
+                n_valid += 1
+                token_freq.update(tokens)
+                text = " ".join(tokens)
+                fout.write(json.dumps({"text": text, "tokens": tokens}) + "\n")
+                # reservoir sample for the frontend Data page
+                if len(samples) < SAMPLE_K:
+                    samples.append(text)
+                elif rng.random() < SAMPLE_K / n_valid:
+                    samples[rng.randrange(SAMPLE_K)] = text
 
     # per-category aggregation
     cat_freq = Counter()

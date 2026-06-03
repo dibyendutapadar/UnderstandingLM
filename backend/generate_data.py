@@ -21,6 +21,7 @@ The templates here are deliberately weighted toward the two relationships the
 """
 
 import argparse
+import math
 import os
 import random
 
@@ -66,9 +67,18 @@ def _noun_with_det(noun):
 
 
 def _object_phrase():
-    """An object, fruits half the time carrying their signature color."""
+    """An object phrase.
+
+    Two complementary color behaviors that, together, let the color<->fruit
+    analogy work even in 3D:
+      * fruits carry their FIXED signature color (red apple, yellow banana ...)
+        -> the consistent offset that powers `apple - red + yellow ~= banana`
+      * animals carry a RANDOM color -> every color shares an
+        'adjective-before-a-noun' context, so the colors form their own cluster
+        (otherwise each color would just collapse onto its single fruit).
+    """
     obj = random.choice(OBJECTS)
-    if obj in COLOR_FRUIT and random.random() < 0.6:
+    if obj in COLOR_FRUIT and random.random() < 0.85:
         return ["the", COLOR_FRUIT[obj], obj]
     return ["the", obj]
 
@@ -109,6 +119,15 @@ def t_color_fruit():
     fruit = random.choice(FRUITS)
     color = COLOR_FRUIT[fruit]
     return ["the", fruit, "is", color, "."]
+
+
+def t_color_fruit_adj():
+    """Color directly adjacent to its fruit so the association is robust to
+    subsampling: 'he like the red apple .'"""
+    fruit = random.choice(FRUITS)
+    pro = random.choice(["he", "she"] + SUBJECT_NOUNS)
+    det = [] if pro in ("he", "she") else ["the"]
+    return det + [pro, random.choice(VERBS), "the", COLOR_FRUIT[fruit], fruit, "."]
 
 
 def t_sentiment():
@@ -186,6 +205,7 @@ TEMPLATES = [
     (t_gender_tag, 14),      # analogy-critical
     (t_same_gender_pair, 8),
     (t_color_fruit, 14),     # analogy-critical
+    (t_color_fruit_adj, 12),  # analogy-critical (adjacency robust to subsampling)
     (t_sentiment, 10),
     (t_role_context, 8),
     (t_svo_place, 8),
@@ -211,68 +231,90 @@ def generate_templates(count, seed=0):
 
 
 # ---------------------------------------------------------------------------
-# OpenAI generation
+# OpenAI generation — short STORIES (richer, more natural co-occurrence than
+# isolated templated sentences, which is what makes the embedding geometry good)
 # ---------------------------------------------------------------------------
-SYSTEM_PROMPT = """You generate sentences in a tiny artificial language.
+STORY_SYSTEM_PROMPT = """You write tiny stories in a restricted toy language.
 
-You may ONLY use these exact tokens (nothing else, no other words, no \
-capitalization, no contractions):
+You may ONLY use these exact tokens — no other words, no capital letters, no \
+contractions, no numbers:
 
 {vocab}
 
-Rules:
-- Output one sentence per line. No numbering, no commentary.
-- Lowercase only. Separate every token (including punctuation) with a space.
-- End each sentence with " ." or " ?".
-- Keep sentences short (3-8 tokens), simple, and grammatical for this language.
-- Follow patterns like:
-    the boy eat the red apple .
-    he is a king .
-    she is a queen .
-    the apple is red .
-    the king and the man see the dog .
-    the girl is very happy .
-    she want the banana ?
-- Respect these fixed associations: apple->red, banana->yellow, grape->green, \
-rice->blue ; he goes with man/boy/king ; she goes with woman/girl/queen .
+Formatting rules (follow EXACTLY):
+- Write {per_call} separate little stories. Put ONE story per line.
+- Each story is 4 to 8 short sentences flowing together on that single line.
+- Lowercase only. Put a space between every token, INCLUDING punctuation.
+- End every sentence with " ." or " ?". You may use " ," inside a sentence.
+- No numbering, no titles, no commentary — only the story lines.
+
+Language rules:
+- Keep sentences short and grammatical for this toy language (subject verb \
+object, "the X is ADJ", etc.).
+- Vary the people, verbs, objects, colors, places, and sentiment across stories.
+- Respect these fixed associations so the world is consistent:
+    apple is red , banana is yellow , grape is green , rice is blue ;
+    he goes with man / boy / king ; she goes with woman / girl / queen .
+
+Example of ONE story line:
+the boy is happy . he see the red apple in the park . the girl give the apple \
+to him ? she is very good . the king and the queen are happy , the boy eat the \
+apple .
 """
 
 
-def generate_openai(count, model, batch=50, seed=0):
+def _clean_line(line):
+    return " ".join(line.strip().lower().split())
+
+
+def generate_openai_stories(num_stories, model, per_call=10, workers=8, seed=0):
+    """Generate `num_stories` story lines via the OpenAI API, in parallel."""
+    from concurrent.futures import ThreadPoolExecutor, as_completed
+
     from dotenv import load_dotenv
     from openai import OpenAI
 
     load_dotenv(os.path.join(os.path.dirname(__file__), ".env"))
     client = OpenAI()  # reads OPENAI_API_KEY from env
-    system = SYSTEM_PROMPT.format(vocab="  ".join(V.VOCAB))
+    system = STORY_SYSTEM_PROMPT.format(vocab="  ".join(V.VOCAB), per_call=per_call)
 
-    out = []
-    while len(out) < count:
-        n = min(batch, count - len(out))
+    n_calls = math.ceil(num_stories / per_call)
+
+    def one_call(i):
         resp = client.chat.completions.create(
             model=model,
-            temperature=1.0,
+            temperature=1.1,
             messages=[
                 {"role": "system", "content": system},
-                {"role": "user", "content": f"Generate {n} sentences."},
+                {"role": "user",
+                 "content": f"Write {per_call} new and varied stories."},
             ],
         )
         text = resp.choices[0].message.content or ""
-        for line in text.splitlines():
-            line = " ".join(line.strip().lower().split())
-            if line:
-                out.append(line)
-        print(f"  ... {len(out)}/{count} candidate sentences")
-    return out[:count]
+        return [_clean_line(ln) for ln in text.splitlines() if _clean_line(ln)]
+
+    stories, done = [], 0
+    with ThreadPoolExecutor(max_workers=workers) as ex:
+        futures = [ex.submit(one_call, i) for i in range(n_calls)]
+        for fut in as_completed(futures):
+            try:
+                stories.extend(fut.result())
+            except Exception as e:  # noqa: BLE001 — keep going, report at end
+                print(f"  ! call failed: {e}")
+            done += 1
+            print(f"  ... {done}/{n_calls} calls, {len(stories)} story lines")
+    return stories
 
 
 def main():
-    ap = argparse.ArgumentParser(description="Generate candidate sentences.")
-    ap.add_argument("--count", type=int, default=15000, help="number of sentences")
+    ap = argparse.ArgumentParser(description="Generate candidate corpus text.")
+    ap.add_argument("--count", type=int, default=2000,
+                    help="number of stories (OpenAI) or sentences (--dry-run)")
     ap.add_argument("--dry-run", action="store_true",
-                    help="use Python templates instead of the OpenAI API")
+                    help="use Python sentence templates instead of the OpenAI API")
     ap.add_argument("--model", default=os.environ.get("OPENAI_MODEL", "gpt-4o-mini"))
-    ap.add_argument("--batch", type=int, default=50, help="sentences per API call")
+    ap.add_argument("--per-call", type=int, default=10, help="stories per API call")
+    ap.add_argument("--workers", type=int, default=8, help="parallel API calls")
     ap.add_argument("--seed", type=int, default=0)
     ap.add_argument("--out", default=None)
     args = ap.parse_args()
@@ -281,18 +323,21 @@ def main():
     out_path = args.out or os.path.join(here, "data", "raw_sentences.txt")
     os.makedirs(os.path.dirname(out_path), exist_ok=True)
 
-    mode = "templates (--dry-run)" if args.dry_run else f"OpenAI ({args.model})"
-    print(f"Generating {args.count} candidate sentences via {mode} ...")
-
     if args.dry_run:
-        sentences = generate_templates(args.count, seed=args.seed)
+        print(f"Generating {args.count} template sentences (--dry-run) ...")
+        lines = generate_templates(args.count, seed=args.seed)
+        unit = "sentences"
     else:
-        sentences = generate_openai(args.count, args.model, args.batch, args.seed)
+        print(f"Generating ~{args.count} stories via OpenAI ({args.model}) ...")
+        lines = generate_openai_stories(
+            args.count, args.model, args.per_call, args.workers, args.seed
+        )
+        unit = "story lines"
 
     with open(out_path, "w") as f:
-        f.write("\n".join(sentences) + "\n")
-    print(f"Wrote {len(sentences)} candidates -> {out_path}")
-    print("Next: python validate.py")
+        f.write("\n".join(lines) + "\n")
+    print(f"Wrote {len(lines)} {unit} -> {out_path}")
+    print("Next: python validate.py  (splits stories into sentences + checks vocab)")
 
 
 if __name__ == "__main__":

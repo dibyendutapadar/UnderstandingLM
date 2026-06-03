@@ -1,9 +1,13 @@
+# Secrets — never commit
+.env
+*.env
+**/.env
+
 # Python
 __pycache__/
 *.pyc
 .venv/
 venv/
-backend/.env
 
 # Node / Vite
 node_modules/
