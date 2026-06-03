@@ -152,3 +152,63 @@ a {
 .pipeline .arrow {
   color: var(--muted);
 }
+
+/* ---- Data page ---- */
+.category-cols {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+.cat-card {
+  padding: 14px 16px;
+}
+.cat-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.token-chip {
+  display: grid;
+  grid-template-columns: 12px 70px 1fr 56px;
+  align-items: center;
+  gap: 8px;
+  padding: 3px 0;
+  font-size: 13px;
+}
+.token-chip .tok {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+.freq-bar {
+  height: 6px;
+  background: var(--panel-2);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.freq-fill {
+  display: block;
+  height: 100%;
+}
+.freq-num {
+  text-align: right;
+  font-size: 11px;
+}
+.samples {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 8px;
+}
+.sample {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 13px;
+  color: var(--text);
+}

@@ -11,6 +11,7 @@ frontend/dist/
 *.log
 
 # Generated data (large; regenerate via backend scripts)
+backend/data/raw_sentences.txt
 backend/data/sentences.jsonl
 backend/data/embeddings_epoch_*.json
 

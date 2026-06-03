@@ -1,0 +1,230 @@
+{
+  "vocab": [
+    "he",
+    "she",
+    "man",
+    "woman",
+    "boy",
+    "girl",
+    "king",
+    "queen",
+    "apple",
+    "banana",
+    "grape",
+    "rice",
+    "red",
+    "yellow",
+    "green",
+    "blue",
+    "cat",
+    "dog",
+    "fish",
+    "bird",
+    "happy",
+    "sad",
+    "good",
+    "bad",
+    "big",
+    "small",
+    "like",
+    "hate",
+    "eat",
+    "see",
+    "want",
+    "give",
+    "is",
+    "are",
+    "the",
+    "a",
+    "and",
+    "very",
+    "not",
+    "in",
+    "on",
+    "with",
+    "park",
+    "house",
+    "school",
+    "today",
+    "tomorrow",
+    ".",
+    ",",
+    "?"
+  ],
+  "size": 50,
+  "categories": {
+    "people": [
+      "he",
+      "she",
+      "man",
+      "woman",
+      "boy",
+      "girl",
+      "king",
+      "queen"
+    ],
+    "fruit": [
+      "apple",
+      "banana",
+      "grape",
+      "rice"
+    ],
+    "color": [
+      "red",
+      "yellow",
+      "green",
+      "blue"
+    ],
+    "animal": [
+      "cat",
+      "dog",
+      "fish",
+      "bird"
+    ],
+    "sentiment": [
+      "happy",
+      "sad",
+      "good",
+      "bad"
+    ],
+    "size": [
+      "big",
+      "small"
+    ],
+    "verb": [
+      "like",
+      "hate",
+      "eat",
+      "see",
+      "want",
+      "give"
+    ],
+    "function": [
+      "is",
+      "are",
+      "the",
+      "a",
+      "and",
+      "very",
+      "not"
+    ],
+    "place": [
+      "in",
+      "on",
+      "with",
+      "park",
+      "house",
+      "school"
+    ],
+    "time": [
+      "today",
+      "tomorrow"
+    ],
+    "punctuation": [
+      ".",
+      ",",
+      "?"
+    ]
+  },
+  "token2category": {
+    "he": "people",
+    "she": "people",
+    "man": "people",
+    "woman": "people",
+    "boy": "people",
+    "girl": "people",
+    "king": "people",
+    "queen": "people",
+    "apple": "fruit",
+    "banana": "fruit",
+    "grape": "fruit",
+    "rice": "fruit",
+    "red": "color",
+    "yellow": "color",
+    "green": "color",
+    "blue": "color",
+    "cat": "animal",
+    "dog": "animal",
+    "fish": "animal",
+    "bird": "animal",
+    "happy": "sentiment",
+    "sad": "sentiment",
+    "good": "sentiment",
+    "bad": "sentiment",
+    "big": "size",
+    "small": "size",
+    "like": "verb",
+    "hate": "verb",
+    "eat": "verb",
+    "see": "verb",
+    "want": "verb",
+    "give": "verb",
+    "is": "function",
+    "are": "function",
+    "the": "function",
+    "a": "function",
+    "and": "function",
+    "very": "function",
+    "not": "function",
+    "in": "place",
+    "on": "place",
+    "with": "place",
+    "park": "place",
+    "house": "place",
+    "school": "place",
+    "today": "time",
+    "tomorrow": "time",
+    ".": "punctuation",
+    ",": "punctuation",
+    "?": "punctuation"
+  },
+  "gender_pairs": [
+    [
+      "he",
+      "she"
+    ],
+    [
+      "man",
+      "woman"
+    ],
+    [
+      "boy",
+      "girl"
+    ],
+    [
+      "king",
+      "queen"
+    ]
+  ],
+  "color_fruit": {
+    "apple": "red",
+    "banana": "yellow",
+    "grape": "green",
+    "rice": "blue"
+  },
+  "analogies": [
+    {
+      "a": "king",
+      "b": "man",
+      "c": "woman",
+      "expect": "queen"
+    },
+    {
+      "a": "he",
+      "b": "boy",
+      "c": "girl",
+      "expect": "she"
+    },
+    {
+      "a": "apple",
+      "b": "red",
+      "c": "yellow",
+      "expect": "banana"
+    }
+  ],
+  "counts": {
+    "total": 50,
+    "words": 47,
+    "punctuation": 3
+  }
+}
