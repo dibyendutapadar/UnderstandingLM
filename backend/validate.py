@@ -14,6 +14,7 @@ import argparse
 import json
 import os
 import random
+import re
 from collections import Counter
 
 import vocab as V
@@ -21,9 +22,19 @@ import vocab as V
 
 TERMINATORS = {".", "?"}
 
+# Detach punctuation that models tend to glue onto words ("king." -> "king" ".").
+# Only ".,?" are core vocab; others (e.g. "!") become sparse extras instead of
+# silently corrupting the word they were stuck to.
+_PUNCT_RE = re.compile(r'([.,!?;:"()])')
+
+
+def normalize(text):
+    """Lowercase and space-separate punctuation so tokens line up with the vocab."""
+    return " ".join(_PUNCT_RE.sub(r" \1 ", text.lower()).split())
+
 
 def tokenize(line):
-    return line.strip().split()
+    return normalize(line).split()
 
 
 def split_sentences(tokens):
