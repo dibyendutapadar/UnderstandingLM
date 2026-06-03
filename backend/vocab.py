@@ -18,15 +18,16 @@ import os
 # ---------------------------------------------------------------------------
 CATEGORIES = {
     # gendered pairs -> drive the "gender axis"
-    "people": ["he", "she", "man", "woman", "boy", "girl", "king", "queen"],
+    "people": ["he", "she", "man", "woman", "boy", "girl", "king", "queen", "they"],
     "fruit": ["apple", "banana", "grape", "rice"],
-    "color": ["red", "yellow", "green", "blue"],
+    "color": ["red", "yellow", "green", "blue","white"],
     "animal": ["cat", "dog", "fish", "bird"],
-    "sentiment": ["happy", "sad", "good", "bad"],
+    "sentiment": ["happy", "sad", "good", "bad", "like"],
+    "thing":["water","sky"],
     "size": ["big", "small"],
-    "verb": ["like", "hate", "eat", "see", "want", "give"],
+    "verb": ["like", "hate", "eat", "see", "want", "give", "go","come"],
     "function": ["is", "are", "the", "a", "and", "very", "not"],
-    "place": ["in", "on", "with", "park", "house", "school"],
+    "place": ["in", "on", "with", "house", "school","to"],
     "time": ["today", "tomorrow"],
     "punctuation": [".", ",", "?"],
 }

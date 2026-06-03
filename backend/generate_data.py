@@ -236,7 +236,7 @@ def generate_templates(count, seed=0):
 # OpenAI generation — short PASSAGES (richer, more natural co-occurrence than
 # isolated templated sentences, which is what makes the embedding geometry good)
 # ---------------------------------------------------------------------------
-STORY_SYSTEM_PROMPT = """You write tiny passages in a restricted toy language.
+STORY_SYSTEM_PROMPT = """You write tiny stories / paragraphs passages in a restricted toy language.
 
 Build sentences mostly from these core tokens — no capital letters, no \
 contractions, no numbers:
@@ -259,10 +259,11 @@ Formatting rules (follow EXACTLY):
 - No numbering, no titles, no commentary — only the passage lines.
 
 Language rules:
-- Keep sentences short and grammatical (subject verb object, "the X is ADJ").
+- Keep sentences short and grammatical, and they must be as logical as possible (see story passage example)
 - Vary the people, verbs, objects, colors, places, and sentiment.
+- make the sentences logical within the span of words. make sure the spread is good all across.
 - Respect these fixed associations so the world is consistent:
-    apple is red , banana is yellow , grape is green , rice is blue ;
+    apple is red , banana is yellow , grape is green , rice is white, sky is blue;
     he goes with man / boy / king ; she goes with woman / girl / queen .
 
 Definition / category passage — write MANY of these, they teach the meanings:
@@ -272,8 +273,11 @@ man and woman and boy and girl are people . apple and banana and grape are \
 fruit . apple and banana and rice are food . cat and dog and fish are animal .
 
 Story passage example:
-he is a boy. the boy is happy . he see the red apple. he want red apple. \
-she is a girl . the king and the queen are happy , the boy eat the apple .
+he is a boy. the boy is happy . he see the red apple. she is a girl. she is happy. the boy and girl are happy. she like red apple. he see red apple. he give red apple to girl. he is sad. she is sad.\
+he is a king. king is a man. she is a queen. the king and the queen are happy. they eat banana. banana is yellow. banana good. they are happy.\
+he is a boy. he go to school today. school good, he happy. he go to school tomorrow. school bad, he sad.
+she is a girl. she see sky. sky is blue.
+king is a man. a man is he. he like dog. he hare cat. cat and dog are animal.
 """
 
 
