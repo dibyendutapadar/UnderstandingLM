@@ -1,101 +1,172 @@
 {
-  "num_sentences": 15000,
-  "num_tokens_emitted": 101017,
+  "num_sentences": 3200,
+  "num_tokens_emitted": 21579,
   "vocab_size": 50,
   "vocab_covered": 50,
   "missing_tokens": [],
-  "rejected": 0,
-  "rejection_rate": 0.0,
-  "rejection_examples": [],
+  "rejected": 4674,
+  "rejection_rate": 0.5936,
+  "rejection_examples": [
+    {
+      "text": "he want to play with the dog .",
+      "unknown": [
+        "play",
+        "to"
+      ]
+    },
+    {
+      "text": "tomorrow is a good day for a picnic .",
+      "unknown": [
+        "day",
+        "for",
+        "picnic"
+      ]
+    },
+    {
+      "text": "the woman gives the red apple to the boy .",
+      "unknown": [
+        "gives",
+        "to"
+      ]
+    },
+    {
+      "text": "they eat the apple together .",
+      "unknown": [
+        "they",
+        "together"
+      ]
+    },
+    {
+      "text": "they see a small fish in the water .",
+      "unknown": [
+        "they",
+        "water"
+      ]
+    },
+    {
+      "text": "it is a blue fish .",
+      "unknown": [
+        "it"
+      ]
+    },
+    {
+      "text": "the cat is big and strong .",
+      "unknown": [
+        "strong"
+      ]
+    },
+    {
+      "text": "it see a bird .",
+      "unknown": [
+        "it"
+      ]
+    },
+    {
+      "text": "the cat want to catch the bird ?",
+      "unknown": [
+        "catch",
+        "to"
+      ]
+    },
+    {
+      "text": "they learn about grapes .",
+      "unknown": [
+        "about",
+        "grapes",
+        "learn",
+        "they"
+      ]
+    }
+  ],
   "token_freq": {
-    "he": 2229,
-    "she": 2272,
-    "man": 1988,
-    "woman": 1984,
-    "boy": 1986,
-    "girl": 2084,
-    "king": 1970,
-    "queen": 1982,
-    "apple": 1809,
-    "banana": 1852,
-    "grape": 1802,
-    "rice": 1829,
-    "red": 1414,
-    "yellow": 1434,
-    "green": 1398,
-    "blue": 1413,
-    "cat": 1143,
-    "dog": 1208,
-    "fish": 1176,
-    "bird": 1151,
-    "happy": 478,
-    "sad": 434,
-    "good": 478,
-    "bad": 481,
-    "big": 325,
-    "small": 153,
-    "like": 1399,
-    "hate": 1428,
-    "eat": 1497,
-    "see": 1355,
-    "want": 1411,
-    "give": 1400,
-    "is": 5822,
-    "are": 688,
-    "the": 24175,
-    "a": 1624,
-    "and": 2201,
-    "very": 620,
-    "not": 609,
-    "in": 1388,
-    "on": 447,
-    "with": 568,
-    "park": 435,
-    "house": 733,
-    "school": 667,
-    "today": 257,
-    "tomorrow": 238,
-    ".": 14513,
-    ",": 582,
-    "?": 487
+    "he": 405,
+    "she": 450,
+    "man": 255,
+    "woman": 349,
+    "boy": 448,
+    "girl": 507,
+    "king": 260,
+    "queen": 247,
+    "apple": 165,
+    "banana": 215,
+    "grape": 139,
+    "rice": 164,
+    "red": 150,
+    "yellow": 119,
+    "green": 130,
+    "blue": 160,
+    "cat": 310,
+    "dog": 502,
+    "fish": 152,
+    "bird": 166,
+    "happy": 706,
+    "sad": 365,
+    "good": 322,
+    "bad": 29,
+    "big": 362,
+    "small": 211,
+    "like": 88,
+    "hate": 33,
+    "eat": 197,
+    "see": 300,
+    "want": 121,
+    "give": 77,
+    "is": 2208,
+    "are": 243,
+    "the": 3999,
+    "a": 461,
+    "and": 586,
+    "very": 621,
+    "not": 273,
+    "in": 722,
+    "on": 10,
+    "with": 207,
+    "park": 316,
+    "house": 260,
+    "school": 177,
+    "today": 176,
+    "tomorrow": 5,
+    ".": 3197,
+    ",": 11,
+    "?": 3
   },
   "category_freq": {
-    "people": 16495,
-    "fruit": 7292,
-    "color": 5659,
-    "animal": 4678,
-    "sentiment": 1871,
-    "size": 478,
-    "verb": 8490,
-    "function": 35739,
-    "place": 4238,
-    "time": 495,
-    "punctuation": 15582
+    "people": 2921,
+    "fruit": 683,
+    "color": 559,
+    "animal": 1130,
+    "sentiment": 1422,
+    "size": 573,
+    "verb": 816,
+    "function": 8391,
+    "place": 1692,
+    "time": 181,
+    "punctuation": 3211
   },
   "samples": [
-    "she is a woman .",
-    "the queen hate the red apple .",
-    "the boy and the king give the bird .",
-    "the queen eat the blue rice in the park .",
-    "the queen like the green grape .",
-    "she is a girl .",
-    "the boy and the man like the bird .",
-    "he is very bad .",
-    "the bird is on the house .",
-    "the king see the fish .",
-    "the woman give the bird in the park .",
-    "the apple is red .",
-    "the banana is yellow .",
-    "the woman eat the dog .",
-    "the king is big .",
-    "he like the cat , the apple and the banana .",
-    "the woman eat the green grape .",
-    "she want the bird , the banana and the dog .",
-    "he eat the cat ?",
-    "the man see the green grape .",
-    "the banana is yellow .",
-    "the king give the cat .",
-    "he hate the dog , the banana and the fish .",
-    "she is a girl ."
+    "she is very happy .",
+    "the happy dog is with the man .",
+    "the boy is happy .",
+    "the fish is not blue .",
+    "she is very happy .",
+    "he is very happy today .",
+    "she eat a banana in the house .",
+    "the woman is sad .",
+    "the man is sad .",
+    "the queen is in the house .",
+    "she want a banana .",
+    "she hate the apple .",
+    "the boy with the dog is very happy .",
+    "the girl like rice .",
+    "the dog is happy .",
+    "she is not happy today .",
+    "the house is blue and the park is green .",
+    "the dog is bad .",
+    "he is happy .",
+    "the girl see the banana in the house .",
+    "the woman is a queen .",
+    "the cat is small and very happy .",
+    "the queen is happy .",
+    "the girl is in the park today ."
   ]
 }

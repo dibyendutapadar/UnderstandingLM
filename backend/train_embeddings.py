@@ -127,8 +127,8 @@ def analogy_report(emb):
     return hits
 
 
-def cohesion_report(emb):
-    """Mean intra-category vs inter-category cosine — is structure forming?"""
+def _separation(emb):
+    """Mean intra-category minus mean inter-category cosine."""
     units = {w: _unit(emb[i]) for w, i in V.word2idx.items()}
     intra, inter = [], []
     words = list(V.word2idx)
@@ -136,10 +136,16 @@ def cohesion_report(emb):
         for b in words[i + 1:]:
             s = float(np.dot(units[a], units[b]))
             (intra if V.token2category[a] == V.token2category[b] else inter).append(s)
+    return np.mean(intra), np.mean(inter)
+
+
+def cohesion_report(emb):
+    """Mean intra-category vs inter-category cosine — is structure forming?"""
+    intra, inter = _separation(emb)
     print("\nCategory cohesion (cosine):")
-    print(f"  mean intra-category: {np.mean(intra):+.3f}")
-    print(f"  mean inter-category: {np.mean(inter):+.3f}")
-    print(f"  separation (intra - inter): {np.mean(intra) - np.mean(inter):+.3f}")
+    print(f"  mean intra-category: {intra:+.3f}")
+    print(f"  mean inter-category: {inter:+.3f}")
+    print(f"  separation (intra - inter): {intra - inter:+.3f}")
 
 
 def export_embeddings(emb, path):
@@ -159,76 +165,179 @@ def export_embeddings(emb, path):
 
 
 # ---------------------------------------------------------------------------
-# Train
+# Method 1 — skip-gram (SGD). Returns (embedding matrix, snapshots).
+# ---------------------------------------------------------------------------
+def train_skipgram(sentences_path, dim, window, subsample, epochs, batch, lr,
+                   seed, snapshots=False, verbose=True):
+    torch.manual_seed(seed)
+    centers, contexts = build_pairs(sentences_path, window, subsample, seed)
+    if verbose:
+        print(f"  {len(centers):,} skip-gram pairs (window={window}, subsample={subsample})")
+    model = SkipGram(len(V.VOCAB), dim)
+    criterion = nn.CrossEntropyLoss()
+    optimizer = torch.optim.Adam(model.parameters(), lr=lr)
+    n = len(centers)
+    snap_epochs = sorted(set([0, 1, 2, 5, 10, 20, 40, 80, epochs - 1]))
+    frames = []
+
+    def emb():
+        return model.embedding.weight.detach().cpu().numpy().copy()
+
+    for epoch in range(epochs):
+        model.train()
+        perm = torch.randperm(n)
+        total = 0.0
+        for start in range(0, n, batch):
+            idx = perm[start:start + batch]
+            logits = model(centers[idx])
+            loss = criterion(logits, contexts[idx])
+            optimizer.zero_grad()
+            loss.backward()
+            optimizer.step()
+            total += loss.item() * len(idx)
+        if verbose and (epoch % 20 == 0 or epoch == epochs - 1):
+            print(f"  epoch {epoch:3d}  loss {total / n:.4f}")
+        if snapshots and epoch in snap_epochs:
+            frames.append({"epoch": epoch, "loss": round(total / n, 4),
+                           "emb": emb().round(5).tolist()})
+    return emb(), frames
+
+
+# ---------------------------------------------------------------------------
+# Method 2 — count-based PPMI + truncated SVD (LSA / Hellinger-PCA style).
+# The top-`dim` singular vectors are the best linear `dim`-D summary of the
+# word/context association structure. Deterministic; strong on tiny corpora.
+# ---------------------------------------------------------------------------
+def build_cooccurrence(sentences_path, window):
+    size = len(V.VOCAB)
+    C = np.zeros((size, size), dtype=np.float64)
+    with open(sentences_path) as f:
+        for line in f:
+            ids = [V.word2idx[t] for t in json.loads(line)["tokens"]]
+            n = len(ids)
+            for i in range(n):
+                lo, hi = max(0, i - window), min(n, i + window + 1)
+                for j in range(lo, hi):
+                    if j != i:
+                        C[ids[i], ids[j]] += 1.0 / abs(i - j)  # distance-weighted
+    return C
+
+
+def ppmi_svd(C, dim, alpha=0.75):
+    total = C.sum()
+    Pwc = C / total
+    Pw = C.sum(1) / total
+    ctx = C.sum(0) ** alpha          # context-distribution smoothing (SGNS trick)
+    Pc = ctx / ctx.sum()
+    with np.errstate(divide="ignore", invalid="ignore"):
+        pmi = np.log(Pwc / np.outer(Pw, Pc))
+    pmi[~np.isfinite(pmi)] = 0.0
+    ppmi = np.maximum(pmi, 0.0)
+    U, S, _ = np.linalg.svd(ppmi)
+    return U[:, :dim] * np.sqrt(S[:dim])   # scale by sqrt(singular values)
+
+
+# ---------------------------------------------------------------------------
+# Method 3 — train high-dim skip-gram, then PCA down to `dim`.
+# ---------------------------------------------------------------------------
+def pca_to(emb, dim):
+    X = emb - emb.mean(0)
+    _, _, Vt = np.linalg.svd(X, full_matrices=False)
+    return X @ Vt[:dim].T
+
+
+def train_highd_pca(sentences_path, dim, highd, window, subsample, epochs,
+                    batch, lr, seed):
+    emb, _ = train_skipgram(sentences_path, highd, window, subsample, epochs,
+                            batch, lr, seed, verbose=False)
+    print(f"  trained {highd}-d skip-gram, projecting to {dim}-d via PCA")
+    return pca_to(emb, dim)
+
+
+METHODS = ("skipgram", "ppmi-svd", "highd-pca")
+
+
+def build_method(method, args):
+    if method == "skipgram":
+        emb, frames = train_skipgram(
+            args.sentences, args.dim, args.window, args.subsample,
+            args.epochs, args.batch, args.lr, args.seed,
+            snapshots=args.snapshots)
+        return emb, frames
+    if method == "ppmi-svd":
+        C = build_cooccurrence(args.sentences, args.window)
+        return ppmi_svd(C, args.dim, args.alpha), []
+    if method == "highd-pca":
+        return train_highd_pca(args.sentences, args.dim, args.highd, args.window,
+                               args.subsample, args.epochs, args.batch, args.lr,
+                               args.seed), []
+    raise ValueError(method)
+
+
+# ---------------------------------------------------------------------------
+# Main
 # ---------------------------------------------------------------------------
 def main():
-    ap = argparse.ArgumentParser(description="Train the 3D skip-gram embedding.")
+    ap = argparse.ArgumentParser(description="Train a 3D word embedding.")
+    ap.add_argument("--method", choices=METHODS, default="ppmi-svd")
+    ap.add_argument("--compare", action="store_true",
+                    help="run all methods and print an analogy/cohesion comparison")
     ap.add_argument("--sentences", default=os.path.join(HERE, "data", "sentences.jsonl"))
     ap.add_argument("--out", default=os.path.join(HERE, "data", "embeddings.json"))
     ap.add_argument("--dim", type=int, default=3)
-    ap.add_argument("--window", type=int, default=2)
+    ap.add_argument("--window", type=int, default=3)
     ap.add_argument("--subsample", type=float, default=1e-3,
-                    help="frequent-word subsampling threshold (0 disables)")
+                    help="skip-gram frequent-word subsampling threshold (0 disables)")
+    ap.add_argument("--alpha", type=float, default=0.75,
+                    help="ppmi-svd context-distribution smoothing exponent")
+    ap.add_argument("--highd", type=int, default=48,
+                    help="hidden dim for the highd-pca method")
     ap.add_argument("--epochs", type=int, default=120)
     ap.add_argument("--batch", type=int, default=4096)
     ap.add_argument("--lr", type=float, default=0.01)
     ap.add_argument("--seed", type=int, default=1)
     ap.add_argument("--snapshots", action="store_true",
-                    help="also save per-epoch frames for the training slider")
+                    help="(skipgram only) save per-epoch frames for the training slider")
     args = ap.parse_args()
 
-    torch.manual_seed(args.seed)
     np.random.seed(args.seed)
-
     if not os.path.exists(args.sentences):
         raise SystemExit(f"No corpus at {args.sentences}. Run generate_data.py + validate.py.")
 
-    print(f"Building skip-gram pairs (window={args.window}, subsample={args.subsample}) ...")
-    centers, contexts = build_pairs(args.sentences, args.window, args.subsample, args.seed)
-    print(f"  {len(centers):,} training pairs")
+    if args.compare:
+        print(f"Comparing methods on {args.sentences} (window={args.window}) ...\n")
+        results = {}
+        for m in METHODS:
+            print(f"[{m}]")
+            emb, _ = build_method(m, args)
+            results[m] = emb
+            analogy_report(emb)
+            cohesion_report(emb)
+            print()
+        print("=" * 56)
+        print(f"{'method':<12}{'analogies':>12}{'separation':>14}")
+        for m, emb in results.items():
+            hits = sum(
+                nearest(emb,
+                        emb[V.word2idx[a['a']]] - emb[V.word2idx[a['b']]] + emb[V.word2idx[a['c']]],
+                        exclude=(a['a'], a['b'], a['c']), k=1)[0][0] == a['expect']
+                for a in V.ANALOGIES)
+            intra, inter = _separation(emb)
+            print(f"{m:<12}{hits:>8}/{len(V.ANALOGIES):<3}{intra - inter:>+14.3f}")
+        print("\nPick one with --method NAME (no --compare) to write embeddings.json.")
+        return
 
-    model = SkipGram(len(V.VOCAB), args.dim)
-    criterion = nn.CrossEntropyLoss()
-    optimizer = torch.optim.Adam(model.parameters(), lr=args.lr)
-
-    n = len(centers)
-    snap_epochs = sorted(set([0, 1, 2, 5, 10, 20, 40, 80, args.epochs - 1]))
-    snapshots = []
-
-    def current_emb():
-        return model.embedding.weight.detach().cpu().numpy().copy()
-
-    for epoch in range(args.epochs):
-        model.train()
-        perm = torch.randperm(n)
-        total = 0.0
-        for start in range(0, n, args.batch):
-            idx = perm[start:start + args.batch]
-            x, y = centers[idx], contexts[idx]
-            logits = model(x)
-            loss = criterion(logits, y)
-            optimizer.zero_grad()
-            loss.backward()
-            optimizer.step()
-            total += loss.item() * len(idx)
-        avg = total / n
-        if epoch % 10 == 0 or epoch == args.epochs - 1:
-            print(f"  epoch {epoch:3d}  loss {avg:.4f}")
-        if args.snapshots and epoch in snap_epochs:
-            snapshots.append({"epoch": epoch, "loss": round(avg, 4),
-                              "emb": current_emb().round(5).tolist()})
-
-    emb = current_emb()
+    print(f"Method: {args.method}")
+    emb, frames = build_method(args.method, args)
     rows = export_embeddings(emb, args.out)
-    print(f"\nwrote {args.out}  ({len(rows)} tokens, dim={args.dim})")
+    print(f"\nwrote {args.out}  ({len(rows)} tokens, dim={args.dim}, method={args.method})")
 
-    if args.snapshots:
+    if frames:
         snap_path = os.path.join(HERE, "data", "embeddings_snapshots.json")
         with open(snap_path, "w") as f:
-            json.dump({"vocab": V.VOCAB,
-                       "categories": V.token2category,
-                       "frames": snapshots}, f)
-        print(f"wrote {snap_path}  ({len(snapshots)} frames)")
+            json.dump({"vocab": V.VOCAB, "categories": V.token2category,
+                       "frames": frames}, f)
+        print(f"wrote {snap_path}  ({len(frames)} frames)")
 
     analogy_report(emb)
     cohesion_report(emb)
