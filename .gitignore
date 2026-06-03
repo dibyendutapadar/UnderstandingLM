@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+backend/.env
+
+# Node / Vite
+node_modules/
+frontend/dist/
+*.log
+
+# Generated data (large; regenerate via backend scripts)
+backend/data/sentences.jsonl
+backend/data/embeddings_epoch_*.json
+
+# Claude Code
+.claude/
+
+# OS
+.DS_Store
