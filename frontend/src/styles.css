@@ -212,6 +212,24 @@ a {
   font-size: 13px;
   color: var(--text);
 }
+.extra-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.extra-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--panel-2);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 12px;
+}
+.extra-chip code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
 
 /* ---- Embedding page ---- */
 .embed-grid {

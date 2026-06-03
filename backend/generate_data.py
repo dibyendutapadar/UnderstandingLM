@@ -37,7 +37,6 @@ FEMALE_NOUNS = ["woman", "girl", "queen"]
 PEOPLE = V.CATEGORIES["people"]                      # incl. he/she
 SUBJECT_NOUNS = MALE_NOUNS + FEMALE_NOUNS            # nameable people (no pronoun)
 
-VERBS = V.CATEGORIES["verb"]                         # like hate eat see want give
 FRUITS = V.CATEGORIES["fruit"]                       # apple banana grape rice
 ANIMALS = V.CATEGORIES["animal"]                     # cat dog fish bird
 OBJECTS = FRUITS + ANIMALS
@@ -46,8 +45,15 @@ POS = ["happy", "good"]
 NEG = ["sad", "bad"]
 SENTIMENT = POS + NEG
 SIZES = ["big", "small"]
-PLACES = V.CATEGORIES["place"][3:]                   # park house school
-TIMES = V.CATEGORIES["time"]                         # today tomorrow
+THINGS = V.CATEGORIES.get("thing", [])               # water sky
+TIMES = V.CATEGORIES["time"]                          # today tomorrow
+
+# "place" mixes prepositions and locations; split them so templates stay grammatical.
+PREPOSITIONS = {"in", "on", "with", "to"}
+PLACES = [p for p in V.CATEGORIES["place"] if p not in PREPOSITIONS]   # house school
+# Transitive verbs vs motion verbs (go/come take "to <place>", not an object).
+MOTION_VERBS = [v for v in V.CATEGORIES["verb"] if v in ("go", "come")]
+VERBS = [v for v in V.CATEGORIES["verb"] if v not in ("go", "come")]   # like hate eat see want give
 
 COLOR_FRUIT = V.COLOR_FRUIT                           # apple->red, banana->yellow, ...
 
@@ -200,6 +206,30 @@ def t_comma_list():
     return [pro, random.choice(VERBS), "the", a, ",", "the", b, "and", "the", c, "."]
 
 
+def t_they():
+    """Plural pronoun 'they' as subject."""
+    if random.random() < 0.5:
+        return ["they", "are", random.choice(SENTIMENT), "."]
+    return ["they", random.choice(VERBS)] + _object_phrase() + ["."]
+
+
+def t_thing_desc():
+    """Describe a 'thing' (water/sky) with a color -> covers water, sky, white."""
+    if not THINGS:
+        return ["the", "sky", "is", "blue", "."]
+    thing = random.choice(THINGS)
+    color = "white" if (thing == "sky" and random.random() < 0.5) else "blue"
+    return ["the", thing, "is", color, "."]
+
+
+def t_motion():
+    """Motion verb + 'to <place>' -> covers go, come, to, house, school."""
+    pro = random.choice(["he", "she", "they"] + SUBJECT_NOUNS)
+    det = [] if pro in ("he", "she", "they") else ["the"]
+    verb = random.choice(MOTION_VERBS) if MOTION_VERBS else "go"
+    return det + [pro, verb, "to", "the", random.choice(PLACES), "."]
+
+
 # (template, weight)
 TEMPLATES = [
     (t_svo, 16),
@@ -217,6 +247,9 @@ TEMPLATES = [
     (t_with, 5),
     (t_on, 4),
     (t_comma_list, 5),
+    (t_they, 6),
+    (t_thing_desc, 5),
+    (t_motion, 6),
 ]
 _FUNCS = [f for f, _ in TEMPLATES]
 _WEIGHTS = [w for _, w in TEMPLATES]

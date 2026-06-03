@@ -63,6 +63,44 @@ export default function DataPage() {
         ))}
       </div>
 
+      <h3 style={{ marginTop: 36 }}>
+        Sparse extra words{" "}
+        <span className="muted" style={{ fontSize: 13, fontWeight: 400 }}>
+          (outside the core {vocab.size})
+        </span>
+      </h3>
+      <p className="muted" style={{ marginTop: 0, maxWidth: 760 }}>
+        The relaxed checker keeps real-English words the model slips in (as long
+        as a sentence has at least one core token). They enter the embedding as a
+        sparse tail — concept words like <code>fruit</code> or <code>animal</code>{" "}
+        tend to settle near the things they describe.
+      </p>
+      {stats.num_extra_types > 0 ? (
+        <>
+          <div className="stat-grid" style={{ marginBottom: 14 }}>
+            <StatCard value={stats.num_extra_types} label="Extra word types" />
+            <StatCard value={stats.num_extra_tokens.toLocaleString()} label="Extra tokens" />
+            <StatCard value={stats.sentences_with_extra.toLocaleString()} label="Sentences w/ extra" />
+          </div>
+          <div className="card">
+            <div className="extra-chips">
+              {Object.entries(stats.extra_freq).map(([w, c]) => (
+                <span key={w} className="extra-chip" title={`appears ${c} times`}>
+                  <span className="dot" style={{ background: categoryColor("other") }} />
+                  <code>{w}</code>
+                  <span className="muted">{c}</span>
+                </span>
+              ))}
+            </div>
+          </div>
+        </>
+      ) : (
+        <div className="notice">
+          None in this corpus — it was generated with the strict templates. Extras
+          appear when you generate with OpenAI (the relaxed checker keeps them).
+        </div>
+      )}
+
       <h3 style={{ marginTop: 36 }}>Sample sentences</h3>
       <div className="card">
         <div className="samples">

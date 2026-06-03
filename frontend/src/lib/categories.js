@@ -7,6 +7,7 @@ export const CATEGORY_COLORS = {
   animal: "#9ece6a",
   sentiment: "#bb9af7",
   size: "#7dcfff",
+  thing: "#41a6b5",
   verb: "#ff9e64",
   function: "#737aa2",
   place: "#73daca",

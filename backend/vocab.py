@@ -14,7 +14,7 @@ import os
 
 # ---------------------------------------------------------------------------
 # Categories -> tokens.  Order here defines token ids (flattened, top to bottom).
-# 50 tokens total = 47 words + 3 punctuation.
+# The core vocabulary (size derived below); 3 of them are punctuation.
 # ---------------------------------------------------------------------------
 CATEGORIES = {
     # gendered pairs -> drive the "gender axis"
@@ -22,7 +22,7 @@ CATEGORIES = {
     "fruit": ["apple", "banana", "grape", "rice"],
     "color": ["red", "yellow", "green", "blue","white"],
     "animal": ["cat", "dog", "fish", "bird"],
-    "sentiment": ["happy", "sad", "good", "bad", "like"],
+    "sentiment": ["happy", "sad", "good", "bad"],
     "thing":["water","sky"],
     "size": ["big", "small"],
     "verb": ["like", "hate", "eat", "see", "want", "give", "go","come"],
@@ -108,8 +108,10 @@ def export(path: str | None = None) -> str:
 
 
 if __name__ == "__main__":
-    assert len(VOCAB) == 50, f"expected 50 tokens, got {len(VOCAB)}"
-    assert len(set(VOCAB)) == 50, "duplicate token in VOCAB"
+    dupes = [t for t in VOCAB if VOCAB.count(t) > 1]
+    assert not dupes, f"duplicate token(s) in VOCAB: {sorted(set(dupes))}"
     out = export()
-    print(f"vocab size: {len(VOCAB)} (47 words + 3 punctuation expected)")
+    words = sum(1 for t in VOCAB if not is_punctuation(t))
+    punct = sum(1 for t in VOCAB if is_punctuation(t))
+    print(f"vocab size: {len(VOCAB)} ({words} words + {punct} punctuation)")
     print(f"wrote {out}")
