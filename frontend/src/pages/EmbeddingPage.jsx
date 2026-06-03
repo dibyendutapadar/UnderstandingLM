@@ -39,6 +39,23 @@ export default function EmbeddingPage() {
   const [b, setB] = useState("man");
   const [c, setC] = useState("woman");
   const [showAnalogy, setShowAnalogy] = useState(false);
+  const [selected, setSelected] = useState(() => new Set()); // words to show; empty = all
+
+  const toggleWord = (w) =>
+    setSelected((prev) => {
+      const next = new Set(prev);
+      next.has(w) ? next.delete(w) : next.add(w);
+      return next;
+    });
+  const selectAll = () => setSelected(new Set(rows.map((r) => r.word)));
+  const clearSelection = () => setSelected(new Set());
+
+  // The graph shows only the selected words (empty selection = show all).
+  // In analogy mode we always show everything so you can see where the result lands.
+  const visibleRows = useMemo(() => {
+    if (showAnalogy || selected.size === 0) return rows;
+    return rows.filter((r) => selected.has(r.word));
+  }, [showAnalogy, selected]);
 
   const neighbors = useMemo(
     () => nearest(rows, vecOf(byWord[inspected]), { exclude: [inspected], k: 5 }),
@@ -104,7 +121,7 @@ export default function EmbeddingPage() {
       <div className="embed-grid">
         <div className="card plot-card">
           <Plot3D
-            rows={rows}
+            rows={visibleRows}
             highlight={highlight}
             extras={extras}
             onClickWord={(w) => {
@@ -123,6 +140,42 @@ export default function EmbeddingPage() {
         </div>
 
         <div className="side">
+          {/* Multi-select: which words to show in the graph */}
+          <div className="card">
+            <div className="show-head">
+              <h3 style={{ margin: 0 }}>Show in graph</h3>
+              <div className="show-actions">
+                <button className="ghost" onClick={selectAll}>Select all</button>
+                <button className="ghost" onClick={clearSelection}>Clear</button>
+              </div>
+            </div>
+            <p className="muted" style={{ fontSize: 12, margin: "6px 0 10px" }}>
+              {selected.size === 0
+                ? `Showing all ${rows.length} words. Tick words to show only those.`
+                : `Showing ${selected.size} selected word${selected.size > 1 ? "s" : ""}.`}
+            </p>
+            <div className="wordlist">
+              {PRESENT_CATEGORIES.map((cat) => (
+                <div key={cat} className="wordlist-group">
+                  <div className="wordlist-cat">
+                    <span className="dot" style={{ background: categoryColor(cat) }} />
+                    {cat}
+                  </div>
+                  {GROUPS[cat].map((w) => (
+                    <label key={w} className="word-check">
+                      <input
+                        type="checkbox"
+                        checked={selected.has(w)}
+                        onChange={() => toggleWord(w)}
+                      />
+                      <code>{w}</code>
+                    </label>
+                  ))}
+                </div>
+              ))}
+            </div>
+          </div>
+
           {/* Vector inspector */}
           <div className="card">
             <h3 style={{ marginTop: 0 }}>Inspect a word</h3>

@@ -18,7 +18,7 @@ frontend/dist/
 backend/data/raw_sentences.txt
 backend/data/sentences.jsonl
 backend/data/embeddings_epoch_*.json
-backend/data/generation_log.jsonl
+backend/data/generation_log*.jsonl
 backend/data/flagged_invalid.txt
 
 # Claude Code
