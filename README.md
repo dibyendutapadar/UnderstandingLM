@@ -48,4 +48,6 @@ cd ../frontend && npm install && npm run dev
 - [x] Step 1 — project skeleton + 50-token vocabulary
 - [x] Step 2 — LLM/template corpus generation + checker
 - [x] Step 3 — embedding training + 3D visualization page
-- [ ] Step 4+ — Transformer Microscope (see `.claude/plans/`)
+- [x] Step 4 — Transformer Microscope (tiny 1-layer/1-head transformer; every
+      tensor of the forward pass inspectable in-browser)
+- [ ] Step 5+ — per-tensor deep dives, training slider (see `.claude/plans/`)

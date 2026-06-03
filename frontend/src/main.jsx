@@ -9,6 +9,7 @@ import "./styles.css";
 // Lazy-load the Plotly-heavy embedding page so its big bundle only loads when
 // that route is visited.
 const EmbeddingPage = lazy(() => import("./pages/EmbeddingPage.jsx"));
+const MicroscopePage = lazy(() => import("./pages/MicroscopePage.jsx"));
 
 // HashRouter so deep links work on plain static hosting (no server rewrites).
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -20,6 +21,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
             <Route index element={<OverviewPage />} />
             <Route path="data" element={<DataPage />} />
             <Route path="embeddings" element={<EmbeddingPage />} />
+            <Route path="microscope" element={<MicroscopePage />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Route>
         </Routes>

@@ -16,6 +16,7 @@ ARTIFACTS = [
     os.path.join(ROOT, "shared", "vocab.json"),
     os.path.join(HERE, "data", "corpus_stats.json"),
     os.path.join(HERE, "data", "embeddings.json"),
+    os.path.join(HERE, "data", "transformer.json"),
 ]
 
 

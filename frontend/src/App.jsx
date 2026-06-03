@@ -6,6 +6,7 @@ const STAGES = [
   { to: "/", label: "Overview", end: true, step: "" },
   { to: "/data", label: "The Language", step: "Step 2" },
   { to: "/embeddings", label: "Embeddings", step: "Step 3" },
+  { to: "/microscope", label: "Transformer Microscope", step: "Step 4" },
 ];
 
 export default function App() {
