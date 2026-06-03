@@ -21,26 +21,31 @@ visualization client-side, so the whole thing hosts for free as static files.
 
 ## Build pipeline (run one step at a time)
 
+All backend commands are run from the `backend/` directory.
+
 ```bash
 # Step 1 — write the vocabulary contract
-python backend/vocab.py                 # -> shared/vocab.json (50 tokens)
+python vocab.py                       # -> shared/vocab.json (50 tokens)
 
 # Step 2 — generate + validate the corpus
-cp backend/.env.example backend/.env    # add your OpenAI key (or use --dry-run)
-python backend/generate_data.py --dry-run --count 200
-python backend/validate.py              # -> data/sentences.jsonl, corpus_stats.json
+cp .env.example .env                  # add your OpenAI key
+python generate_data.py --count 2000  # OpenAI short stories (rich co-occurrence)
+#   ...or, with no API key / no spend:
+python generate_data.py --dry-run --count 15000   # Python templates
+python validate.py                    # split stories->sentences, vocab-check,
+                                      # -> data/sentences.jsonl, corpus_stats.json
 
 # Step 3 — train the 3D embeddings, then export to the frontend
-python backend/train_embeddings.py      # -> data/embeddings.json + analogy report
-python backend/export_to_frontend.py    # copies artifacts into frontend/src/data/
+python train_embeddings.py            # -> data/embeddings.json + analogy report
+python export_to_frontend.py          # copies artifacts into frontend/src/data/
 
 # Frontend
-cd frontend && npm install && npm run dev
+cd ../frontend && npm install && npm run dev
 ```
 
 ## Status
 
 - [x] Step 1 — project skeleton + 50-token vocabulary
-- [ ] Step 2 — LLM corpus generation + checker
-- [ ] Step 3 — embedding training + 3D visualization page
+- [x] Step 2 — LLM/template corpus generation + checker
+- [x] Step 3 — embedding training + 3D visualization page
 - [ ] Step 4+ — Transformer Microscope (see `.claude/plans/`)
