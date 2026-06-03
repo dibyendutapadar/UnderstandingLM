@@ -70,78 +70,91 @@ def main():
     ap.add_argument("--strict", action="store_true",
                     help="reject any sentence with an out-of-vocab token "
                          "(default: keep them; the extra words become a sparse tail)")
+    ap.add_argument("--top-tokens", type=int, default=0,
+                    help="keep only sentences made entirely of the N most frequent "
+                         "tokens (0 = no cap). Caps the vocabulary and drops "
+                         "rare-word noise before embedding.")
     args = ap.parse_args()
 
     if not os.path.exists(args.inp):
         raise SystemExit(f"No candidates at {args.inp}. Run generate_data.py first.")
 
-    token_freq = Counter()      # core-50 tokens
-    extra_freq = Counter()      # words outside the core 50 (sparse tail)
-    n_valid = 0
+    # ---- Pass 1: accept candidate sentences + count all-token frequencies ----
+    accepted = []          # list of token lists
+    all_freq = Counter()   # over core + extra, used to pick the top-N tokens
     n_rejected = 0
-    n_with_extra = 0
     rejection_examples = []
+    for line in open(args.inp):
+        if not line.strip():
+            continue
+        for tokens in split_sentences(tokenize(line)):
+            if not tokens:
+                continue
+            bad = [t for t in tokens if t not in V.word2idx]
+            #   strict  -> any out-of-vocab token rejects the sentence
+            #   relaxed -> keep it, as long as it has >=1 core token
+            core_present = len(bad) < len(tokens)
+            if (args.strict and bad) or (not args.strict and not core_present):
+                n_rejected += 1
+                if len(rejection_examples) < 10:
+                    rejection_examples.append(
+                        {"text": " ".join(tokens), "unknown": sorted(set(bad))})
+                continue
+            accepted.append(tokens)
+            all_freq.update(tokens)
+
+    # ---- Optional vocabulary cap: keep only sentences built from the top N ----
+    allowed = None
+    n_dropped_by_cap = 0
+    if args.top_tokens > 0:
+        allowed = {w for w, _ in all_freq.most_common(args.top_tokens)}
+        kept = [s for s in accepted if all(t in allowed for t in s)]
+        n_dropped_by_cap = len(accepted) - len(kept)
+        accepted = kept
+
+    # ---- Pass 2: write kept sentences + gather stats over the final corpus ----
+    token_freq = Counter()      # core tokens
+    extra_freq = Counter()      # kept words outside the core
+    n_with_extra = 0
     rng = random.Random(0)
     SAMPLE_K = 24
-    samples = []  # reservoir sample of valid sentences (for the frontend)
+    samples = []
+    with open(args.out, "w") as fout:
+        for tokens in accepted:
+            token_freq.update(t for t in tokens if t in V.word2idx)
+            extras = [t for t in tokens if t not in V.word2idx]
+            if extras:
+                n_with_extra += 1
+                extra_freq.update(extras)
+            text = " ".join(tokens)
+            fout.write(json.dumps({"text": text, "tokens": tokens}) + "\n")
+            if len(samples) < SAMPLE_K:
+                samples.append(text)
+            elif rng.random() < SAMPLE_K / len(samples):
+                samples[rng.randrange(SAMPLE_K)] = text
 
-    with open(args.inp) as fin, open(args.out, "w") as fout:
-        for line in fin:
-            if not line.strip():
-                continue
-            for tokens in split_sentences(tokenize(line)):
-                if not tokens:
-                    continue
-                bad = [t for t in tokens if t not in V.word2idx]
-                # Rejection rules:
-                #   strict  -> any out-of-vocab token rejects the sentence
-                #   relaxed -> keep it, as long as it has >=1 core token
-                #              (a line of pure gibberish is still useless)
-                core_present = len(bad) < len(tokens)
-                reject = (args.strict and bad) or (not args.strict and not core_present)
-                if reject:
-                    n_rejected += 1
-                    if len(rejection_examples) < 10:
-                        rejection_examples.append(
-                            {"text": " ".join(tokens), "unknown": sorted(set(bad))}
-                        )
-                    continue
-
-                n_valid += 1
-                token_freq.update(t for t in tokens if t in V.word2idx)
-                if bad:
-                    n_with_extra += 1
-                    extra_freq.update(bad)
-                text = " ".join(tokens)
-                fout.write(json.dumps({"text": text, "tokens": tokens}) + "\n")
-                # reservoir sample for the frontend Data page
-                if len(samples) < SAMPLE_K:
-                    samples.append(text)
-                elif rng.random() < SAMPLE_K / n_valid:
-                    samples[rng.randrange(SAMPLE_K)] = text
-
-    # per-category aggregation (core only)
+    n_valid = len(accepted)
     cat_freq = Counter()
     for tok, c in token_freq.items():
         cat_freq[V.token2category[tok]] += c
-
     missing = [t for t in V.VOCAB if token_freq[t] == 0]
-    total_candidates = n_valid + n_rejected
+    total = n_valid + n_rejected
 
     stats = {
         "strict": args.strict,
+        "top_tokens": args.top_tokens,
         "num_sentences": n_valid,
         "num_tokens_emitted": sum(token_freq.values()),
         "vocab_size": len(V.VOCAB),
         "vocab_covered": len(V.VOCAB) - len(missing),
         "missing_tokens": missing,
         "rejected": n_rejected,
-        "rejection_rate": round(n_rejected / total_candidates, 4) if total_candidates else 0,
+        "dropped_by_cap": n_dropped_by_cap,
+        "rejection_rate": round(n_rejected / total, 4) if total else 0,
         "rejection_examples": rejection_examples,
-        "token_freq": {t: token_freq[t] for t in V.VOCAB},  # vocab order, incl zeros
+        "token_freq": {t: token_freq[t] for t in V.VOCAB},
         "category_freq": {c: cat_freq[c] for c in V.CATEGORIES},
         "samples": samples,
-        # sparse extra vocabulary (words outside the core 50)
         "sentences_with_extra": n_with_extra,
         "num_extra_types": len(extra_freq),
         "num_extra_tokens": sum(extra_freq.values()),
@@ -152,26 +165,30 @@ def main():
 
     # ---- console summary ----
     print(f"mode            : {'strict' if args.strict else 'relaxed (extras kept)'}")
+    if args.top_tokens:
+        kept_vocab = len(token_freq) + len(extra_freq)
+        print(f"top-tokens cap  : {args.top_tokens} -> kept vocab {kept_vocab}, "
+              f"dropped {n_dropped_by_cap} sentences over the cap")
+        # warn if any analogy word didn't make the cut
+        cut = [w for a in V.ANALOGIES for w in (a['a'], a['b'], a['c'], a['expect'])
+               if allowed and w not in allowed]
+        if cut:
+            print(f"  WARNING: analogy words outside top-{args.top_tokens}: {sorted(set(cut))}")
     print(f"valid sentences : {n_valid}")
     print(f"rejected        : {n_rejected} ({stats['rejection_rate'] * 100:.2f}%)")
     print(f"core coverage   : {stats['vocab_covered']}/{len(V.VOCAB)}")
     if missing:
         print(f"  MISSING core tokens (never appear): {missing}")
-    if not args.strict:
-        print(f"extra vocabulary: {len(extra_freq)} word types, "
+    if extra_freq:
+        print(f"extra vocabulary: {len(extra_freq)} word types kept, "
               f"{sum(extra_freq.values())} tokens, in {n_with_extra} sentences")
-        if extra_freq:
-            top = ", ".join(f"{w}({c})" for w, c in extra_freq.most_common(12))
-            print(f"  most common extras: {top}")
-    elif rejection_examples:
-        print("  sample rejections:")
-        for ex in rejection_examples[:3]:
-            print(f"    {ex['text']!r}  unknown={ex['unknown']}")
+        top = ", ".join(f"{w}({c})" for w, c in extra_freq.most_common(12))
+        print(f"  most common extras: {top}")
     print(f"wrote {args.out}")
     print(f"wrote {args.stats}")
 
     if n_valid == 0:
-        raise SystemExit("No valid sentences — check the generator.")
+        raise SystemExit("No valid sentences — check the generator / cap.")
 
 
 if __name__ == "__main__":

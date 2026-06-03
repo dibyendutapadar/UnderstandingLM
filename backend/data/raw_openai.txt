@@ -1,0 +1,997 @@
+he is a king . the king is big . she is a queen . the queen is very happy . they are good together .
+they are animals . cat is a small animal . dog is a big animal . fish is a small animal . bird is a colorful animal .
+she is a girl . the girl sees a green grape . she wants the grape . the grape is good . she eats the grape . she is very happy .
+woman is she . man is he . boy is a young man . girl is a young woman . they are people .
+the apple is red . the banana is yellow . the fruit is food . food is good . rice is white .
+he is sad . the man has a dog . the dog is sad too . he goes to the house . the house is big . they are sad in the house .
+king is a man . he is very good . he wants a big house . the house is on a hill . the king is happy in his house .
+the sky is blue . the cat is on the roof . the dog is in the yard . the fish is in water . the bird is in the tree .
+he is a boy . the boy is bad today . he does not want to go to school . today is very sad for him .
+banana is a fruit . it is yellow . apple is a fruit . it is red . grape is a fruit . it is green .
+she is a woman . the woman is happy . she sees a red apple . she eats the apple . the apple is good .
+the dog is big . the cat is small . he has a dog and a cat . he likes dogs . he likes cats too .
+he is a boy . he likes to play . today he wants a blue toy . the toy is very big . he goes to the store .
+the queen is a woman . she is very kind . the king loves her . they are very happy together . the people like them .
+they are animals . they are in the sky . the bird is flying . the cat is watching . the dog is barking at the bird .
+he is a man . the man is sad . he see a yellow banana . he want the banana . the banana is good . he eat the banana . now he is happy .
+she is a queen . the queen is very good . she see a big green grape . the grape is nice . the queen like the grape . she give the grape to a girl .
+the dog is a animal . the cat is a animal . the fish is a animal . cat and dog are happy . fish is not happy . they are all in the water .
+he is a boy . he go to school today . the school is big . he see a girl . the girl is happy . she is in the school .
+they are people . people are big and small . man and woman are people . boy and girl are people . they like to eat food .
+the apple is red . red is a color . grape is green . green is a color . banana is yellow . yellow is a color . fruit is good food .
+she is a woman . the woman is with the king . they are happy together . the king is good . the queen is good . they eat rice .
+he has a dog . the dog is small and happy . he take the dog to the park . the park is nice . they see a big bird . the bird is blue .
+he is a king . the king want a big house . the house is near the school . the school is a good place . he go to the house .
+the fish is in the water . the bird is in the sky . the cat is on the house . the dog is with the man . they are all animals .
+she is a girl . today she see a red apple . she want the apple . the apple is good . she eat the apple . she is happy now .
+king is a man . queen is a woman . together they are happy . they eat fruit and drink water . fruit is good food . they love each other .
+a boy is a young man . a girl is a young woman . boy and girl like to play . they go to the park . the park is a happy place .
+they are animals . cat and dog and fish are animals . animals are very nice . the fish swim in the water . the cat play with the dog .
+he is a man . the man is sad . he see a blue bird . the bird is happy . he want to give the bird a banana . banana is yellow . he eat the banana .
+she is a woman . the woman is happy . she like rice . rice is white . she give rice to the dog . the dog is big . the dog is good .
+boy and girl are people . they are happy . they play with a cat . cat is small and white . they see the big dog . the dog is sad .
+king is a man . queen is a woman . they are in a big house . the house is green . they eat grape . grape is green . they are very happy .
+she is a girl . the girl like apple . apple is red . she eat the apple today . she is not sad . he is a boy . he want a green grape .
+the sky is blue . the sun is big . the sun is not red . the sun is good . the sky is not grey . birds fly in the sky .
+the dog is an animal . the cat is an animal . bird is an animal . they are not fish . fish live in water . water is good for fish .
+woman and girl are happy . they go to school . school is big . today is a good day . they see a happy boy . the boy give them a red apple .
+king and queen are happy in their house . they eat banana and rice . banana is yellow and rice is white . they drink water .
+he see a sad fish . the fish is in the water . the water is blue . he want to catch the fish . the fish is very small .
+apple is red . banana is yellow . grape is green . these are fruit . rice is food . food is good for people .
+she is a queen . the queen is very good . she like to see the big sky . the sky is blue . today is not bad . she want a red apple .
+the man is big . the woman is small . the boy is happy . he see a green bird . the girl is sad . she want a red banana .
+king is not sad . he is very happy . the queen is happy too . they eat rice in a big house . the house is white .
+he is a dog . the dog is big and good . he like water . the water is very cool . he drink water . the water is very good .
+he is a king . she is a queen . they go to the house . the house is big . he is happy . she is happy . they eat rice . rice is white .
+the boy likes the cat . the cat is small . the girl hates the dog . the dog is big . dog is not good . cat is good . they like cat .
+water is in a glass . glass is a thing . water is clear . the sky is blue . today is hot . tomorrow is cold .
+she is a girl . she want banana . the banana is yellow . banana is a fruit . she eat banana . banana is good . she is happy .
+he see the red grape . grape is good . he is a boy . the fish is in the water . the dog is not in the house . cat is with him .
+the man and woman are happy . they are in a school . the school is big . boy is in the school . girl is not in school . they are sad .
+he is a sad man . he want the apple . apple is red . he hate the yellow banana . yellow is not good . he sees the bird .
+queen is a woman . she is very good . king is a man . they are people . cat and dog are animals . fruit is apple and banana .
+woman like grape . grape is green . he is a boy . he does not like rice . rice is white and not good . she give him an apple .
+the sky is blue . the sun is big . people are happy today . they eat orange fruit . orange fruit is not here . where is the orange ?
+the girl is in the school . she see a red cat . the cat is happy . school is small . she want to go home . home is a good place .
+he wants to give her a banana . banana is yellow and good . she smiles . she see a happy dog . she is a little girl . they are friends together .
+boy see a big fish . fish is swimming in the water . the bird is in the tree . the tree is green . he wants to catch the fish . girl is with him today .
+they are in the garden . the garden is very small . they see many fruits . grape and apple and banana grow here . children are very happy here .
+dog and cat are friends . the dog is happy with the cat . the cat plays in water . water is good . sun is bright . they play in the yard .
+he is a boy . the boy is sad . he see the big blue bird . the bird is happy . it come to the boy . the boy and bird are happy .
+the apple is red . the banana is yellow . grape is green . they are fruit . rice is white . rice is food .
+she is a girl . the girl go to school . school is a place . she is happy in school . they play with food . the food is good .
+king is a man . queen is a woman . the king is sad . he want to give a fruit . the queen is happy today . king and queen love each other .
+he is a man . he like cat . the cat is small . the cat is red . he go to school with the cat . he is a good man .
+she is a woman . she hate water . water is wet . birds are in the sky . sky is blue . the sky is big .
+man and woman are people . boy and girl are people . cat and dog are animal . the dog is happy , the cat is sad . both are with the boy .
+he see a house . the house is big and white . she is in the house . in the house is happy food . he is not sad today . they have banana and apple .
+the banana is yellow . the fish is grey . the bird is yellow and happy . the big dog and cat are friends . fish are animal .
+she is in the house . the woman eat good rice . rice is white . the girl is sad . she want a red apple . she give blue grape to the woman .
+he and she want a pet . they see a dog and a cat . both animals are good . the dog is big but the cat is small . they will buy the big dog .
+king is not sad today . the king is big and strong . the queen is small but very good . they see the red sky , the sky is beautiful .
+the boy and girl are in school . they see the sky . the sky is blue today . school is good for them . school has food and happy fruit .
+like banana , she also like rice . he eats a banana . woman is not in the place . today he see a good fruit . fruit is yellow and red .
+he and she are at the park . the cat see the green grass . she is happy with the cat . the boy and girl play near the dog .
+he is a king . the king is happy . he see a big red apple . he like apple . he give apple to a woman . the woman is a queen . she is very happy .
+she is a girl . the girl has a small cat . the cat is white . the girl and cat are very happy . they go to the house . the house is big .
+king and queen are people . man and woman are people . boy and girl are people . cat and dog and fish are animal . apple and banana and grape are fruit . rice is food .
+he is a boy . the boy is sad . he want a yellow banana . he go to the house . the house is small . the banana is on the table .
+she is a woman . she is good . she like the blue sky . the sky is big . the bird is in the sky . the bird is happy .
+the apple is red . the banana is yellow . the grape is green . fruit is good . food is important . people like food .
+he is a man . the man has a dog . the dog is big . the dog is happy . he and the dog go to the park . the park is fun .
+she is a queen . the queen is sad . she want a green grape . the grape is on the table . she see the grape . she eat the grape .
+the boy is happy . he see a cat . the cat is small . he want to play with the cat . the cat is good . the boy and cat are friends .
+he is a king . the king has a big house . the house is white . the king is very happy . he give rice to the people . the people are happy .
+the girl is sad . she want a red apple . she go to the store . the store is big . she see the apple . she buy the apple .
+man is he . woman is she . boy is a young man . girl is a young woman . people are good . people are happy .
+the dog is a good animal . the cat is a small animal . the fish is a swimming animal . animals are fun . people like animals .
+he is a boy . he go to school today . school is good . the teacher is a woman . the boy is happy in school . he learn very much .
+she is a girl . the girl has a happy dog . the dog is small . they play in the green grass . the grass is soft . they are friends .
+he is a boy . the boy is sad . he want a dog . he see a big dog . the dog is happy . the boy and dog are friends . they go to the house . the house is big .
+she is a woman . the woman is good . she like blue sky . the sky is big . she see a bird . the bird is red . she want to see more birds .
+king is a man . he is good . queen is a woman . she is happy . they are in a big place . the place is a palace . king and queen eat rice . rice is white .
+the apple is red . the banana is yellow . grape is green . fruit is good food . people like fruit . fruit is healthy . big fruit is very good .
+he is a boy . he eat rice . rice is white . he sees the green grape . he like grape . he want grape now . the grape is big .
+she is a girl . she is not sad . she have a cat . the cat is small . the cat is gray . she give the cat some water . the cat is happy .
+animals are dog and cat . animals are in the house . the house is small . some animals are big . the dog is big . the cat is small .
+the king is in the sky . he want to eat banana . the queen is happy . she give him a banana . banana is yellow . the banana is good .
+he is a man . he go with a dog . he sees a big house . the dog is happy . the man is happy . they want to play in the house .
+she is a girl . she is not sad . she loves the green grape . grape is good food . she see a bird . the bird is blue . the bird sings happy songs .
+the dog is big . the cat is small . they are animals . animals have fur . animals can run . some animals can swim .
+the boy is sad . he want a fish . he go to see water . the water is blue . he see a fish swim . the fish is gray . he want the fish .
+apple is red . banana is yellow . grape is green . such fruits are sweet . the girl like fruit . she eat apple , banana , and grape .
+he is a king . he is not sad . his queen is very beautiful . they are very happy . they have a big palace . the palace is in the city .
+she is a woman . she sees a big dog . the dog is very happy . she wants to play with the dog . they go in the yard . the yard is big and green .
+he is a man . he has a dog . the dog is big . the dog is happy . he and the dog go to the park . the park is a good place . they see a bird . the bird is small .
+she is a queen . the queen is very good . she like the blue sky . today is a happy day . she give a green grape to a girl . the girl is very happy . the queen and girl are friends .
+man and woman are people . boy and girl are people . king and queen are people . they all live in a house . house is a good place . people are happy in a house .
+he is a boy . he see a red apple . he want to eat the apple . the apple is big . the boy is very happy . he eat the apple . the apple is good .
+she is a girl . she has a cat . the cat is small . the cat is white . she like the cat very much . they play together . the cat is happy .
+banana is yellow . apple is red . grape is green . fruit is good food . people like fruit . fruit is very healthy . they eat fruit every day .
+he is sad today . he go to school . school is not good . he see a girl . the girl is happy . she give him a banana . he like the banana .
+the sky is blue . the sun is in the sky . the sun is big . it is very hot . birds fly in the sky . they are happy in the sky .
+she is a woman . she like rice . rice is white . she eat rice with fish . fish is good food . she is very happy to eat .
+king has a castle . the castle is big . the queen is with him . they like to see the green trees . the trees are very good . the king and queen are happy .
+he is a boy . he love to play . he play with his dog . the dog is big and happy . they run in the green grass . it is a good day .
+fruit is food . apple and banana and grape are fruit . people eat fruit . fruit is very good . fruit is healthy food . they like to eat fruit .
+she is a girl . she see a sad man . the man is not happy . she give him an apple . the apple is red . the man is happy now .
+dog is an animal . cat is an animal . fish is an animal . they are very different . dog is big . cat is small . fish is in water .
+he is a king . he is very good . he loves his people . they are happy to see him . he give them food . they like the king very much .
+he is a boy . the boy is happy . he see a green grape . the grape is good . he eat the grape . she is a girl . the girl is sad . she want a red apple .
+the dog is big . the cat is small . the dog is happy . the cat is not happy . they are animals . animals are good .
+banana is yellow . grape is green . apple is red . they are fruit . fruit is food . food is good . they are happy .
+he is a man . he has a dog . the dog is big and happy . the man see a woman . she is a queen . they go to a house . the house is big .
+she is a girl . she see a blue sky . the sky is big . the girl is happy . she want to play . she like the sky and the sun .
+fish are animals . bird is an animal too . fish swim in water . birds fly in the sky . they are very different .
+the man is sad . he want a banana . the woman is happy . she give a banana . he eat the banana . now the man is happy .
+he is a king . she is a queen . they are happy together . their house is big . they eat fruit and drink water . water is very good .
+apple is red . banana is yellow . rice is white . they are food . food is good . they eat food today .
+the girl is with a cat . the cat is small and sad . she give the cat food . the cat is very happy now . the girl smiles .
+he is a boy . he like to go to school . school is fun today . he see his friends . they play together .
+king is he . queen is she . king and queen are happy . they ride a horse . the horse is big and strong .
+the fish is swimming . the bird is flying . they are animals . the fish see water . the bird see sky . they are very different .
+he is a man . he like the red apple . he want to see a blue bird . the bird is flying on the sky . he is happy to see it .
+the boy is sad . he want a toy . the toy is not in the house . he look for the toy . he ask his mom .
+he is a man . he has a dog . the dog is big . the dog is happy . he and the dog go to the park . the park is a good place . they see a girl . the girl is with a cat .
+she is a queen . queen is she . the queen has a big crown . the crown is gold . the queen is happy . she likes the sky . the sky is blue .
+a banana is yellow . a grape is green . fruit is good food . apple and banana and grape are fruit . they are sweet . fruit is very good .
+he is a boy . he see a red apple . the apple is on a tree . he wants to eat the apple . he is very happy . he give the apple to a girl . the girl is very happy .
+she is a woman . the woman is sad . she does not like rice . rice is white . the woman has a dog . the dog is small . the dog is not happy .
+king is a man . queen is a woman . they are in a big house . the house is white . the king has a red apple . the queen has a yellow banana .
+the fish is blue . the fish is in the water . the water is clear . the fish is happy . the boy sees the fish . the boy likes fish .
+he is a boy . he likes to play . he has a ball . the ball is green . he plays with a girl . the girl is happy . they play in the park .
+she is a girl . she has a cat . the cat is small . the cat is very happy . she loves the cat . the cat eats fish . fish is food .
+the bird is in the sky . the sky is blue . the bird is happy . it sings a song . the man is under the tree . he sees the bird . he likes the bird .
+the apple is red . the banana is yellow . they are fruit . fruit is good food . the girl likes fruit . she eats an apple .
+he is a king . the king is very good . he is not sad . he has a big throne . the throne is gold . the queen is very happy . they are good together .
+the woman is with a boy . the boy has a dog . the dog is big and happy . they are in the park . the park is green . the woman likes the park .
+the cat is small . the cat is sad . it wants to eat . the cat sees a fish . the fish is swimming . the fish is happy in the water .
+he is a man . the man is big . he has a dog . the dog is happy . they go to a house . the house is white .
+she is a woman . the woman has a cat . the cat is small . she likes the cat . the cat is not bad . she is happy .
+king is a man . queen is a woman . they are happy . king and queen like grape . grape is green . grape is good .
+the boy is sad . he wants a banana . the banana is yellow . he does not eat apple . he wants to go to school .
+the girl is happy today . she is in a big house . the house is green . she sees blue sky . sky is good .
+people are man and woman . people are boy and girl . boy and girl are happy . man and woman can be sad . they are people .
+dog is an animal . cat is also an animal . fish is a different animal . birds are animal too . animals can be happy and sad .
+he is a king . he sees a red apple . he eats the apple . the apple is good . he likes red .
+she is a girl . she like rice and banana . rice is white . banana is yellow . she eat good food .
+man is not sad . he sees blue sky . sky is big . he is happy with dog . they go on a path .
+king and queen are not at home . they are in a big place . place is happy . the king has a banana . queen has a grape .
+the boy is in school today . school is big . the girl is there too . they see the teacher . they are happy .
+he is a boy . the boy has a happy dog . the dog likes to play . they run in a green field . field is big and good .
+she is a woman . she sees a bird . the bird is blue . she is happy with the bird . bird is a good animal .
+apple and banana and rice are food . fruit is apple and banana and grape . they are good to eat . food can be very good .
+he is a man . the man want water . he go to the house . she is a woman . the woman has a dog . the dog is happy .
+the boy sees a red apple . he likes red . the girl eats the yellow banana . banana is good . the red apple is big . they are happy .
+the queen is a woman . queen is she . king and queen are people . the girl and the boy are people . cat and fish are animal . rice and fruit are food .
+she is a girl . she likes the green grape . grape is not bad . the man eats rice . rice is white . he is very happy .
+he is a king . the king has a big house . he sees a white dog . the dog is with the man . the man gives water to the dog .
+the sky is blue . the cat is small . the cat is happy . the boy likes to play . tomorrow is a good day .
+they are people . boy and girl like banana . cat and dog like to play . food is a thing . the green grape is sweet .
+she is a queen . everyone loves the queen . the queen eats rice . rice is very good . king is happy with queen .
+he is a sad man . the man lost his dog . he want to go home . the cat looks at him . today is a long day .
+the bird is an animal . birds can fly in the sky . the dog does not like birds . the fish swims in the water . the cat and dog are good friends .
+she is a girl . she has a grape . she likes the color green . the boy has an apple . the apple is red and good .
+the dog is happy . dog is not sad . he likes to see the cat . they eat food together . the cat is also happy .
+the rice is in a bowl . the apple is red . she is a woman . woman is very happy . today she likes fruit .
+the fish swims fast . it is a small fish . he want to catch fish . the boy comes with him . boy is excited and happy .
+cat is an animal . dog is animal too . a fruit is banana . banana is sweet . many animals are in the world .
+king is he . she is a woman . she wants an apple . the apple is red and good . together they sit in the house .
+he is a man . the man is big . he has a dog . the dog is happy . they go to the house . the house is small . she is a woman . the woman is sad .
+the boy is happy . he likes the yellow banana . he sees the green grape . the grape is good . he eats the grape . she is a girl . the girl likes rice .
+fish and bird are animal . cat and dog are animal . man and woman are people . king and queen are people . apple and banana are fruit . rice and grape are food .
+she is a queen . the queen is very good . she sees the red apple . she likes the apple . the apple is on the table . the table is big . the girl is happy .
+he is a king . the king is very big . he has a big house . the house is blue . she is a queen . the queen is happy . they eat rice and fish .
+they are in school today . school is big . the boy is happy . the girl is sad . tomorrow is a new day . they will go to school again .
+the dog is big . the dog is white . he is a boy . the boy is good . he likes to play . the cat is small . the cat is red .
+the apple is red . the banana is yellow . the grape is green . fruit is good . food is very good . they like to eat fruit .
+she is a girl . the girl sees the blue sky . the sky is big . she wants to fly . tomorrow she will go to the park . the park is a happy place .
+he is a boy . he has a red cat . the cat is small . the boy is very happy . they play in the house . the house is big .
+king is a man . queen is a woman . man and woman are people . boy and girl are small people . apple and banana are fruit . rice and fish are food .
+the dog is sad . the dog wants a friend . he goes to the park . he sees a cat . the cat is happy . they play together .
+she has a green grape . the grape is good . the woman likes fruit . the boy likes food . they eat together . they are happy .
+the boy is very happy . he sees a banana . the banana is yellow . he wants to eat it . the girl is sad . she does not like banana .
+he is a man . he loves the sky . the sky is blue . he sees the bird . the bird is flying . the man is happy . he wants to fly too .
+he is a man . the man is sad . he see a blue sky . he want a red apple . he go to the house . she is a woman . the woman is happy . she like the green grape . she eat the green grape .
+the boy and girl are in the school . the school is big . the school is a place . the boy is a student . the girl is a student . they see a dog . the dog is small .
+king is a man . the queen is a woman . king and queen are people . they are not sad . they are happy . they see a red banana . banana is yellow .
+the cat is a animal . the dog is a animal . the fish is a animal . cat and dog are friends . fish and bird are not friends . they are very different animals .
+she is a girl . the girl see a yellow banana . she like banana . the banana is very good . the man is sad . he hate bananas . she give him grape .
+he is a boy . he want to eat rice . the rice is white . he is very happy . the woman is not happy . she want to eat a blue grape .
+the apple is red . the banana is yellow . the grape is green . apple and banana are fruit . rice is food . food is good .
+they are the king and queen . the king is happy . the queen is happy . they eat rice and banana . the rice is white . the banana is yellow . they like food .
+the boy is sad . he does not see his cat . the cat is small and white . the dog is big . the dog is happy . the boy goes to find his cat .
+she is a girl . the girl loves the blue sky . the sky is big and beautiful . she wants to fly with a bird . the bird is small and yellow . the girl is very happy .
+the man goes to the house . in the house is a dog . the dog is big and happy . the dog wants to play . the man is very good . he plays with the dog .
+the fish is in the water . the water is blue . the cat is on the land . the bird is in the sky . cat and fish are not friends . they are different .
+the woman is a queen . the queen is good . she sees a dog . the dog is happy . the woman gives the dog a red apple . the dog likes the apple .
+they are a man and a woman . the man is happy . the woman is happy . they eat green grapes . the grapes are good . they are very happy together .
+he is a man . the man is sad . he see a big dog . the dog is happy . he want to go with dog . the dog like him . they are friends . he give the dog a red apple .
+she is a girl . the girl is happy . she see a small cat . the cat is white . she like the cat . the cat want to play . they go to the green grass .
+king is a man . king is he . queen is a woman . queen is she . king and queen are people . they are in a big house . the house is white . they like the house .
+a fruit is an apple . an apple is red . a fruit is a banana . a banana is yellow . apple and banana are food . food is good for people . people eat food .
+he is a boy . he go to school today . the school is big . he see a happy girl . she is in the school . he like to go to school . school is not bad .
+the cat is a small animal . the dog is a big animal . cat and dog are pets . pets are good friends . they like to play . they are very happy together .
+she is a queen . the queen is good . she have a big house . the king is in the house . they are happy . they eat rice and fish . rice is white .
+the sky is blue . the sun is in the sky . birds are in the sky . birds are happy . they sing songs . the blue sky is very good .
+he is a happy man . he see a yellow banana . the banana is good . he eat the banana . he like bananas . bananas are a good fruit .
+the boy is sad . he want a pet . he like the dog . the dog is big . the dog is a good animal . he go to the animal place tomorrow .
+she is a girl . she see a green grape . the grape is small . she want to eat the grape . the grape is good . she give the grape to her friend .
+the woman is a queen . she like fish . the fish is happy . fish swim in water . water is very good . queen and fish are very different things .
+he is a king . he want to see the sky . sky is blue today . the king goes to the big house . he sit in the house . he is very happy .
+the apple is red and round . the banana is yellow and long . grape is green and small . these are fruits . fruits are good food . they help people stay happy .
+the girl is in school . she is very happy . she see her friend . her friend is a boy . the boy is good . they learn together in school . school is fun .
+he is a man . he has a big dog . the dog is happy . they go on a walk . she is a woman . she has a small cat . the cat is sad .
+the banana is yellow . the apple is red . the grape is green . all are fruit . fruit is food . food is good .
+she is a girl . she sees a bird in the sky . the bird is blue . she is happy to see it . the bird flies away . she is sad .
+king is a man . a king is strong . queen is a woman . a queen is wise . king and queen are good people . they like to help .
+he sees an apple on the table . the apple is red . he wants to eat the apple . she comes in the house . she sees him with the apple .
+a cat is an animal . cats are small . dogs are also animals . dogs are big . both cat and dog are very happy .
+she is a girl . the girl has a toy . the toy is blue . she takes the toy to school . the school is very big . the toy is good .
+the sky is blue and big . the sun is in the sky . a man is under the sun . he is very hot . he drinks water .
+the woman has a red dress . the dress is very good . she dances in the red dress . they come to watch . the dance makes them happy .
+grapes are green . they grow on the vine . the vine is in the garden . the garden is big . there are many grapes .
+he is a king . he has a big house . the house is white . he does not like to rule . he just wants to play .
+she has a yellow banana . the banana is good to eat . she gives it to a boy . the boy is happy . eating banana is fun .
+dog sees fish in the water . the fish is gray . the dog is excited . the fish swims away fast . the dog barks loudly .
+they are all people . the man and woman are parents . the boy and girl are children . they eat together . they are happy to be together .
+girl has a big red bag . she puts her things in the bag . she goes to school with her bag . at school , she is very good .
+he is a sad man . he does not eat rice today . he does not want food . he sits alone in the house . tomorrow will be better .
+he is a man . the man is big . he has a dog . the dog is happy . they go to the park today . the park is big . he likes the park .
+she is a queen . queen is she . she wears a dress . the dress is green . the queen is good . today is a happy day . they have a party .
+apple is a fruit . apple is red . banana is a fruit . banana is yellow . grape is a fruit . grape is green . fruit is good food .
+the boy is sad . he sees a white cat . the cat is small . he wants the cat . he goes to the cat . the cat runs away . he is very sad .
+the sky is blue . the fish is in water . water is good . the bird is in the sky . the bird is happy . the fish is swimming .
+man and woman are people . boy and girl are people . dog and cat are animal . apple and grape are fruit . fruit and food are good . house and school are place .
+she is a girl . she likes rice . the rice is white . she eats rice every day . today is a good day . the girl is happy .
+they have an apple . the apple is red . he eats the apple . she eats the apple too . the apple is sweet . they are happy with apple .
+the king is big . the king is good . he has a happy dog . the dog likes the king . they play in the yard . the yard is green .
+there is a girl in school . the school is big . she is a good student . she likes to learn . today is a happy day . school is fun .
+he is a boy . the boy likes banana . banana is yellow . he eats a banana . she wants a banana too . they like banana .
+woman and queen are people . man and king are people . dog and fish are animals . apple and banana are fruit . the king is a man .
+he is a man . the man is happy . he see a big dog . the dog is brown . he give the dog a banana . the dog like banana . they are happy .
+she is a woman . the woman is sad . she see a small cat . the cat is white . she want the cat . she give the cat water . the cat is happy .
+king is a man . queen is a woman . king and queen are in a big house . the house is white . the king is happy . the queen is sad .
+girl is a person . boy is a person . they are friends . boy like banana . girl like apple . banana is yellow . apple is red .
+he is a boy . the boy go to school today . school is big . he see a happy girl . she is in school . they are good friends .
+cat and dog are animals . dog is big . cat is small . they are not friends . the dog is bad . the cat is good .
+woman is a person . she like fish . fish is in water . the fish is small . she see fish in water . the water is blue .
+the apple is red . the grape is green . the banana is yellow . they are fruit . fruit is good food . they are sweet and tasty .
+he is a king . he go to the sky . the sky is blue . he like clouds . clouds are white . he want to fly in the sky .
+the woman is in the house . the man is in the yard . the yard is big . the woman is sad . the man is happy . they are not together .
+boy is a person . he like to play . he play with dog . the dog is happy . they run in the yard . they see a red ball .
+she is a girl . the girl is very happy . she eat rice . rice is white . she like rice and fish . fish is good food .
+the queen is in the big castle . the king is with her . the castle is white . they have a nice garden . the garden is green .
+fish is an animal . fish swim in water . they are not on land . water is blue . fish are happy in water .
+he is a man . the man want to eat . he like rice . rice is white . he see a banana . banana is yellow . he eat banana .
+he is a man . the man is big . he has a dog . the dog is happy . they go to the park . the park is a good place . they see a bird . the bird is small .
+she is a woman . the woman is sad . she see a yellow banana . she want the banana . the banana is good . she eat the banana . she is happy now .
+king is a man . queen is a woman . they are in a house . the house is big . the king and queen are happy . they eat rice . rice is white .
+boy and girl are friends . they go to school . school is big . the boy is happy . the girl is happy . they see a cat . the cat is small .
+apple and grape are fruit . apple is red . grape is green . banana is yellow . they are food . food is good . fruit is good . they are happy .
+he is a king . the king is big . he has a dog . the dog is bad . the king is not happy . he want a good dog . he gives the bad dog to a man .
+she is a girl . the girl is small . she has a cat . the cat is white . she like the cat . the cat is good . they play in the house .
+the sky is blue . the sky is big . the sun is in the sky . the sun is yellow . the sun is good . they go to the park today . the park is happy .
+he is a boy . the boy like fish . fish are animal . the fish swim in water . he see a fish . the fish is small . he want a big fish .
+woman and girl are in a school . school is a place . they learn good things . they see a big book . the book is red . they like the book . they want to read it .
+dog and cat are in a house . the house is small . they are friends . the dog is happy . the cat is sad . they play with a toy . the toy is blue .
+he is a king . the king has a big house . the house is white . he is not sad . he is happy . he like to eat red apple . the apple is good .
+they are very happy today . they go to the park . the park is green . they see a bird . the bird is blue . they like the bird . the bird is good .
+she is a queen . the queen is very kind . she gives rice to the boy . the boy is happy . he eat the rice . the rice is white . he is not sad .
+the fruit is good . apple and banana are fruit . grape is green . they all are food . food is very good . they make people happy .
+he is a king . the king is very big . he like red apple . today he eat red apple . the apple is good . she is a queen . the queen is very happy .
+dog and cat are animal . dog is big . cat is small . fish is in water . bird is in sky . the house is a place . the school is a place .
+he see a boy . the boy is sad . he want a banana . the boy not like rice . she is a girl . she give the boy a banana . the banana is yellow .
+they are people . man and woman are people . boy and girl are people . cat and dog are animal . grape is green . apple and banana are fruit .
+she is a happy woman . she see a big dog . the dog is very good . she give water to dog . the dog drink water . they are happy together .
+the sky is blue . the sun is in the sky . the sun is very big . clouds are white . the clouds float in the sky . birds fly in the sky .
+he is a boy . he go to the school today . school is good . he like school . he see his friends . they are happy together .
+grape is green . banana is yellow . fruit is good food . apple is red . rice is white . people eat fruit and rice .
+she is a girl . she like to play . she play with cat . the cat is small . they are happy . she give fish to cat . cat eat fish .
+he is a man . he like to swim . he swim in water . water is cool . today is hot . he is very happy .
+the king is sad . the queen is not happy . they want food . they eat banana and grape . banana is yellow . grape is green .
+he see a girl . the girl is happy . she eat rice . rice is white . she like rice . he want rice too . they eat rice together .
+woman and girl are people . man and boy are people . dog is an animal . fish is an animal . cat is an animal . they are all very good .
+she is a queen . the queen is very good . she like grapes . grapes are green . she eat grapes . they are tasty .
+he is a happy boy . he play with dog . the dog is big . they run fast . he give water to dog . the dog is very good .
+he is a man . he see a big dog . the dog is happy . the man is happy too . they go to the house . the house is blue . they are in the good place .
+she is a girl . she eat a yellow banana . the banana is good . the girl is happy . she go with her cat . the cat is small . they play in the house .
+king is a man . queen is a woman . they are rulers . they are good people . king and queen are happy . they want big fruit . they eat grape .
+the fish is in water . the fish is small . it is not a big thing . the water is blue . the sky is blue too . the fish is very happy .
+he is a boy . he like red grape . he eat it today . he is in school . school is fun . he want to see his friend .
+the apple is red . the banana is yellow . the grape is green . these are fruit . they are food . they are very good . people like them .
+she is a queen . the queen is sad . she want a big banana . the king see her . he give her a banana . the banana is yellow . she is happy .
+boy and girl are people . man and woman are people too . the man see a dog . the woman see a cat . the dog is big . the cat is small .
+the bird is in the sky . the sky is blue . the bird is very happy . it see the sun . the sun is good . the bird is not sad .
+they go to school today . the school is small . the school is white . they are happy in school . they like to play . school is a good place .
+he is a king . king is very happy . he want to eat rice . rice is white . rice is good food . he eat with his queen .
+the dog is a happy animal . the cat is a small animal . they are in the house . house is a good place . people love animals . animals like food .
+he is a boy . the boy see a green grape . he want to eat it . he go to the table . he pick the grape . he is happy .
+she is a woman . she like to eat rice . rice is white . she want a big bowl . the bowl is good . she eat in the house .
+queen is a woman . king is a man . they like fruit . they eat apple and banana . they are happy together . together is a good place .
+he is a man . the man is happy . he go to the house . in the house is a woman . the woman is she . she see the blue sky . sky is blue . they dream big .
+cat is a animal . dog is a animal . fish is a animal . bird is a animal . they make people happy . cat and dog are small . fish and bird are not small .
+she is a girl . the girl is sad . tomorrow she go to school . school is big . she run with the boy . the boy is happy . she want to play happy games .
+the apple is red . the banana is yellow . the grape is green . grapes are fruit . fruit is good to eat . they are healthy food . red and yellow and green are color .
+he is a king . king and queen are people . they wear the big crowns . the queen is she . the king is he . they make the law in the land . the land is a place .
+he is a boy . he like fish and rice . rice is white . the boy eat good food . today is a happy day . he play with the cat . the cat is small .
+she is a woman . the woman has a green dress . the dog is sad . it is not very good . she like to walk in the park . there are many trees in the park .
+the bird is a animal . the fish swims in the water . the cat is a very good friend . dog is with cat . they all come when they eat food . cat and fish are very different .
+grape is green . apple is red . banana very yellow . all fruit are good . people want to eat fruit . fruit is healthy . healthy fruit is good to eat . they make happy hearts .
+the boy is in school . he is happy . the school is big . he want to learn new things . she breaks the rule , it is bad . the teacher is not smiling today .
+he is happy . he gives the boy a red apple . the apple makes the boy smile . she wants green grapes . with grapes are happy too . family is happy with good fruit .
+he and she are very good friends . they help each other . he sees the blue sky . she dreams of a big world . they go to explore the park . they are not sad .
+the banana is sweet . fruit is not bad . the fruit is snack . apple gives energy . fruit is fun to eat . snack is important for kids . they eat fruit with friends .
+she is a girl . the little dog jumps . cat is quiet on the mat . dogs and cats are good . they are special animals . they make life fun and good .
+they are very good people . she rides her bicycle with her dog . he runs very fast . the boy flies his kite . they see the blue sky and happy clouds . clouds are very special things .
+he is a man . he has a dog . the dog is big . the man is happy . they go to the park . the park is a place . the sky is blue .
+she is a queen . queen is she . she has a cat . the cat is small . the queen is happy . she give fish to cat . the cat is good .
+the apple is red . the banana is yellow . the grape is green . fruit is good . apple and banana are food . grape is a fruit .
+he is a boy . the boy is sad . he want a banana . he see a yellow banana . he eat banana . banana is sweet .
+she is a girl . the girl is happy . she like rice . the rice is white . she eat rice with water . water is good .
+king is a man . queen is a woman . they are happy . they eat apple . apple is red . they give grape to people .
+the dog is an animal . the cat is an animal . the bird is an animal . the fish is an animal . animals are good . they are happy .
+he is a king . king is he . he see a big house . the house is white . he want to go in the house . the house is good .
+the boy is sad . he see a red apple . he want the apple . the apple is good . he eat the apple . the apple is sweet .
+she is a girl . the girl is very happy . she has a yellow banana . she give the banana to the dog . the dog is happy . they play together .
+the grape is green . the banana is yellow . the apple is red . yellow and red and green are colors . colors are good . fruit is colorful .
+he is a man . he like a happy dog . the dog is small . they go to school together . school is good . the man is happy .
+she is a queen . the queen has a big house . the house is white . she like to see the sky . the sky is blue .
+the boy and girl are happy . they go to the park . they see a bird . the bird is flying . the bird is good . they want to see the bird .
+king and queen are people . man and woman are people . boy and girl are people . people are happy . they like to eat fruit .
+he is a boy . he see a sad dog . the dog is small . he give the dog water . the dog is happy now . they go home together .
+he is a king . the king is happy . he see a blue bird . the bird is in the sky . the man like bird . he want to give the bird rice . she is a queen . the queen is very kind . she like grape . he give grape to her . they are happy .
+king and queen are people . man is a king . woman is a queen . boy is not a queen . girl is not a king . cat and dog are animal . bird and fish are also animal . fruit is apple and banana and grape . food is rice and fruit and good things .
+she is a girl . she is sad . the cat is small . the woman is in the house . she see a big dog . the dog is happy . he want to play . the dog go with the girl . they run in the yard . she like the big dog .
+the apple is red . the banana is yellow . the grape is green . fruit is good . they eat fruit for food . rice is white . rice is not bad . people eat fruit and rice . food is important .
+he is a boy . the boy see red apple . he want the apple . he go to the tree . the tree is big . he see woman and girl . they also want fruit . he is a good boy . he give apple to them .
+she is a woman . she is very good . she have a cat . the cat is white . the cat is in the house . she give the cat rice . the cat eat the rice happily . the cat is happy and full .
+house is place for people . school is a good place . the school is big . people are happy in the school . children are boy and girl . they learn good things . the school have happy time . tomorrow is another school day .
+he is a man . the man like apple . he eat apple every day . he see apple in the tree . the tree have many fruit . the world is good with apple . they make juice from apple . juice is very sweet .
+the boy is happy . the girl is very happy . they want to play with a dog . the dog is big and fun . he run in the grass . the dog play with the two kids . they all like the dog and are happy .
+the fish is in the water . fish is not in the sky . birds are in the sky . birds drink water . animals need water to live . the fish swim fast . people like to see fish .
+banana is yellow fruit . grape is green fruit . apple is red fruit . they all are food . food is important for good health . children like banana . adults also eat grape . food is part of life .
+the woman is not sad . she tell happy stories . stories are told at school . the king and queen like to hear stories . they give good gifts to children . children are very happy for gifts .
+the bird is small . the bird is not big . it sing in a tree . they see the bird in the sky . he is a boy and very curious . birds are animals that fly . boys like to learn about animals .
+she is a girl . she is with her mom . her mom is a woman . they walk together in a big park . the park have trees and birds and flowers . she like to run and play . parks make children very happy .
+he is a dog . the dog is very good . he see a boy . the boy throw a ball . the dog run fast to fetch the ball . the boy laugh when the dog brings it back . they play happily every day .
+he is a man . the man is happy . he like the green grape . he eat the grape . she is a woman . the woman is sad . she want a red apple .
+the cat is small . the cat is a happy animal . it like to play . the dog is big . the dog is a good animal . it want to eat rice .
+queen is a woman . queen is she . king is a man . king is he . apple and banana are fruit . grape and rice are food .
+he is a boy . he go to the house . the house is big . she is a girl . the girl is happy . they play in the house .
+the sky is blue . the sun is yellow . the clouds are white . the sky is a big place . birds are in the sky . birds are animals .
+he is a king . the king has a big house . she is a queen . the queen is happy . they eat good fruit . the fruit is sweet .
+the boy is sad . he see a bad dog . the dog is big . he want a happy cat . the girl is happy . she see the cat .
+banana is yellow . grape is green . apple is red . they are fruit . they are good food . they are sweet and tasty .
+she is a girl . the girl like to play . she see a big fish . the fish is in the water . the water is blue . the fish is happy .
+the man is good . he go to school . the school is big . the woman is sad . she want to eat . she like rice .
+he is a boy . he like to eat . he want a banana . the banana is yellow . she is a girl . she see the banana .
+king and queen are people . they are happy today . they eat good food . the food is fruit . the fruit is red and yellow .
+the dog is bad . it hate the cat . the cat is good . the cat is happy . the boy is sad . he like the cat .
+the boy and girl are in the school . they are happy . they see their teacher . the teacher is a good man . the man is very nice .
+the apple is red . the banana is yellow . the grape is green . they are fruit . fruit is good food . people like fruit .
+he is a man . he has a big dog . the dog is happy . he like to go outside . she is a woman . she want to play .
+he is a man . he see a big dog . the dog is happy . he give the dog a banana . the dog want the banana . they are happy .
+she is a girl . she like grapes . grapes are green . she eat grapes in the house . her house is small .
+man and woman are people . boy and girl are people . cat and dog are animal . fish and bird are animal . apple and banana and grape are fruit .
+the queen is she . she is a woman . the king is he . he is a man . they are good . they live in a big house .
+he is a boy . the boy is sad . he want a red apple . he see a yellow banana . he eat the banana . he is happy .
+she is a woman . she go to school today . school is good . she see her friend . her friend is a girl . they are happy .
+apple is red . banana is yellow . grape is green . rice is white . water is good . food is good .
+he is a king . the king is big . he like the sky . the sky is blue . he see the bird . the bird is happy .
+she is a girl . she like to eat rice . rice is white . she eat rice in the house . her house is big .
+they are a man and a woman . the man is happy . the woman is sad . they have a big dog . the dog is good .
+he is a boy . he see a fish . the fish is in the water . the water is blue . he want to catch the fish .
+the queen is she . she like red grapes . grapes are good . the king is he . they eat grapes together .
+he is a man . the man like to see the sky . the sky is blue and big . he is happy . he go for a walk .
+they are animals . cat and dog are animals . fish and bird are animals . animals are good . they live in the house .
+he is a man . the man see a dog . the dog is big . the dog is happy . he like the happy dog . they play in the house . she is a woman . the woman is sad .
+the banana is yellow . the apple is red . fruit is good food . grape is green . they eat apple and banana . they like fruit . they are happy .
+king is he . queen is she . king and queen are people . they are in the castle . castle is big . the sky is blue . the sky is big . people see the sky .
+she is a girl . the girl find a fish . the fish is small . it is in the water . the girl is happy . she want to see more fish .
+he is a boy . the boy likes rice . rice is white food . they eat rice today . the rice is good . she is a girl . the girl also eat .
+cat and dog are animal . they are in the house . the cat is small . the dog is big . they are happy together . animal are very good friends .
+he is a king . she is a queen . they live in a big house . the house is good . the house is white . they see the sky . the sky is blue and big .
+she is a girl . she has a red apple . the apple is very good . she like apple . she is happy today . she will eat the apple .
+he is a man . he is sad . he hate the bad dog . the dog is not good . the man wants to give the bad dog to someone .
+they are all happy . boy and girl and man and woman are people . people like fruit . they eat banana and apple .
+she is a queen . the queen wants a banana . the banana is yellow . the boy gives her the yellow banana . she is happy today .
+the cat is small . the dog is big . cat and dog want to play . happy cat and happy dog are good friends . animal like to play .
+he is a boy . the boy go to school tomorrow . school is big . he want to learn . today is a good day for learning .
+they are happy . the bird is in the sky . the sky is blue . the bird wants fruit . they see an apple tree .
+he is a man . he see an orange cat . the cat is happy . he wants to feed the happy cat . the man gives food to the cat .
+he is a man . the man has a dog . the dog is big . the man is happy . he give the dog water . they go to a house . she is a woman . the woman has a cat .
+the apple is red . the banana is yellow . the grape is green . apple and grape are fruit . fruit is good . banana is yellow . rice is white . rice and fruit are food .
+he is a king . king is a man . he wear a crown . the crown is blue . the queen is happy . she is a woman . the king and queen eat banana . the banana is yellow .
+she is a girl . the girl likes to play . she has a dog . the dog is small . the girl is happy . they go to school . school is fun .
+they are animals . cat and dog are animals . fish and bird are animals too . animals live in the house . animals are good .
+he is a boy . the boy is sad today . he sees a red apple . he wants the apple . the apple is good . he eats the apple . now he is happy .
+the sky is blue . the sky is big . the bird flies in the sky . the bird is small . the bird is happy . it sees the sun . the sun is very bright .
+she is a queen . a queen is she . the queen is very kind . she gives food to the people . the people are happy . they eat rice and banana .
+they are people . man , woman , boy , and girl are people . people go to school . school is a place . school is good . people are happy in school .
+he is a boy . the boy likes rice . rice is white . he eats rice with banana . banana is yellow . the boy is very happy .
+the dog is happy . the dog plays with a ball . the ball is red . the girl sees the dog . she runs to the dog . they play together .
+the king is a man . the king lives in a big house . the house is white . the queen is with him . they see a lot of people . people are happy .
+she is a girl . the girl likes to eat fruit . she has an apple . the apple is red . she gives the apple to her dog . the dog likes the apple .
+the banana is yellow . yellow is a color . apple is red . red is a color too . grape is green . green is a color . colors are good .
+he is a man . the man sees a fish . the fish is small . the fish is in water . water is blue . the man is happy to see the fish .
+he is a man . he has a dog . the dog is happy . they go to the park . the park is big . they see a bird . the bird is blue .
+she is a queen . the queen is very pretty . the king is with her . they like to eat rice . rice is white . they give rice to a boy .
+the apple is red . apple is fruit . the banana is yellow . banana is fruit . the grape is green . grape is a fruit . apple and banana and grape are food .
+a woman is happy . she has a cat . the cat is small . she give the cat a toy . the toy is blue . the happy woman plays with cat .
+he is a boy . he want to go to school today . school is fun . he will eat a banana . the banana is yellow . green apple is good too .
+the fish is in the water . fish is an animal . the water is blue . the dog is with the boy . they look at the fish . the boy is happy .
+they are a king and a queen . queen is she . they eat grapes . grapes are green . king like color green . they love the green grapes .
+she is very sad . the girl is sad too . they both lose a red apple . the apple is gone . are they happy ? no , they are sad .
+he is a man . the man like red color . he likes to eat rice . rice is very good . he goes home to eat . home is a good place .
+the dog sees a big cat . the cat is not happy . the dog runs away . the big cat notices a bird . the bird is very pretty and blue .
+a boy goes to the market . the market is small . he sees a yellow banana . the banana is very tasty . he wants to eat it now .
+the sky is blue today . they want to go out . the boy has a red apple . he sees his friend . they eat the apple together .
+they are girls . the girls are happy . they have flower crowns on their heads . the crowns are bright colors . they laugh and play together .
+he is a king . he has a garden . in the garden , there is a big tree . the tree has red apples . the king likes to give apples .
+the teachers are in the schoolhouse . she is a woman . the man is a teacher too . they want to teach their students . the students are happy .
+he is a man . the man is big . he like red apple . he eat red apple . she is a woman . the woman is small . she like yellow banana . she eat yellow banana .
+they are a king and a queen . the king is happy . the queen is sad . they sit on the white house . the house is big .
+boy is in school . school is good . he learn today . he want to play . he see his friend . his friend is a girl .
+the cat is a small animal . the dog is a big animal . the fish is in water . the bird is in the sky . cat and dog are animal .
+grape is green . banana is yellow . apple is red . rice is white . fruit is good food .
+he is a happy boy . he see blue sky . he like the sky . he want to fly . she is a happy girl . she want to go with him .
+the man is sad . he want the blue fish . the woman is happy . she give the blue fish to him . the man is not sad now .
+queen is a woman . the king is a man . they are happy together . they eat fruit . fruit is good for them .
+dog is a good animal . cat is a bad animal . fish is a happy animal . bird is a good animal . they like to play .
+she is a girl . she is in school today . school is small . she see her friends . they are happy .
+he is a king . he like blue grape . he want to eat it . the queen is with him . she want to eat apple .
+the apple is red . the banana is yellow . the rice is white . all are food . food is good .
+he is a boy . the boy is sad . he want to see the happy cat . the cat is in the house . the house is small .
+she is a woman . she is not happy . she want the red banana . the banana is not good . she eat the green grape .
+they are king and queen . king is big . queen is small . they sit on a big chair . the chair is red .
+fish and bird are good animals . they are not in the house . they are in water and sky . they like to swim and fly .
+he is a man . the man is happy . he like big dog . the dog is big and good . the man give dog rice . the dog like rice . they are happy .
+she is a girl . the girl see big cat . the cat is small and sad . the girl want to play with cat . she give cat water . the cat is happy now .
+king is a man . he is a king . queen is a woman . she is a queen . king and queen are happy people . they live in a big house .
+apple is red . banana is yellow . grape is green . food is good . rice is white . fruit is good for health . apple and banana are sweet .
+she is a woman . the woman see the sky . sky is blue . she want to go in the sun . sun is warm . she is happy in the sun .
+he is a boy . the boy like fish . the fish is small and green . the boy catch fish in the water . the fish are happy in water .
+they are happy people . they eat rice and fish . food is good for health . the fish is very good . the rice is white and soft .
+he is a king . the king is strong . he see a big dog . the dog is good and likes to play . the king gives the dog an apple . they are very happy .
+she is a queen . the queen is very wise . she give banana to girl . the girl is happy with banana . banana is yellow and soft . they eat banana together .
+boy and girl are friends . they play in the house . house is big . they see a cat . the cat is sad . they give cat water . cat is happy now .
+dog is an animal . cat is an animal . both are good friends . they play with boy and girl . boy and girl are happy with animals .
+he is a man . the man eats rice . rice is white . he like rice with grape . grape is green . they are happy with food .
+she is a girl . the girl likes apple . the apple is red . she give apple to boy . boy is happy with apple . they eat apple together .
+king and queen are royal people . man and woman are people . boy and girl are children . they like food . they play in the sun .
+they go to school tomorrow . school is big and good . the boy is not sad . the girl is happy . they learn and play at school .
+she is a girl . the girl is happy . she see a yellow banana . he is a boy . he like banana . he want banana . they go to the house . the house is big .
+he is a man . the man is sad . he want red apple . the woman is not happy . she go to the house . he give her rice . she eat rice . rice is white .
+queen is a woman . she is very good . king is a man . he is very good . they are happy people . they eat good food . food is fruit . fruit is good .
+she is a girl . the girl love cat . cat is small . cat is green . she play with cat . cat is happy . boy is sad . cat like boy .
+he is a king . a king is a man . he want big house . the king eat grape . grape is green . grape is good . he is happy with good grape .
+she is a queen . the queen like water . she like grape . grape is green . they go to the place . the place is school . school is big and fun .
+dog is an animal . cat is an animal . they quest food . apple and banana are fruit . fruit is good . cat and dog are not sad . they play today .
+he is a boy . the boy and girl chase the dog . dog is fast . they go to school . school is yellow . they are happy to see friends .
+king and queen see red sky . they are very happy . today is good . they eat banana . banana is yellow . banana is big .
+woman is good . she is happy . she gives the boy a red apple . the apple is ripe . girl like apple too . she eat apple . apple is tasty .
+he is a man . the man see a good cat . cat is very small . he want the cat . he go with the dog . dog and cat are friends .
+she is a happy girl . she play with red ball . the ball is big . boy join her . they play in the yard . yard is fun and green .
+queen is sad today . she want a red rose . the rose is not in the house . king does not like roses . he like fish instead . fish is not bad .
+she is a girl . the girl likes to see birds . the birds are very small . they fly in the sky . he is a boy . he is with her today .
+he is not happy man . he is big and heavy . he sees sad rice . rice is very white . today is hot . tomorrow is cool . he hope for grapes .
+he is a man . the man is big . he has a dog . the dog is happy . they go to the house . the house is small . she is a woman . the woman is good .
+the apple is red . the banana is yellow . the grape is green . apple and banana and grape are fruit . rice is white . banana is food . fruit is good .
+she is a girl . the girl is sad . she want a banana . the banana is yellow . she see the yellow banana . she give the banana to her friend . they are happy .
+he is a king . the king is big . he has a queen . the queen is happy . they see the blue sky . the sky is blue . they go to the big house .
+they are animals . cat and dog are animals . cat is small . dog is big . fish and bird are also animals . they are all happy .
+the boy is in school . school is good . the boy see the red apple . he like the red apple . he eat the apple . he is happy .
+she is a girl . the girl has a cat . the cat is small . the girl is happy . she give water to the cat . the cat is good .
+king and queen are people . they are happy . they eat rice . rice is white . the rice is good . they see a dog . the dog is happy .
+the fish is in water . the water is clear . the fish is small . the bird is in the sky . the bird is big . fish and bird are animals .
+he is a boy . the boy want a grape . the grape is green . he see the green grape . he eat the grape . he is very happy .
+she is a woman . she has a dog . the dog is sad . she give the dog water . the dog is good . she is happy with the dog .
+the house is big . the man and woman are in the house . they eat rice . rice is white . they like rice . rice is very good .
+they are people . man and woman are people . boy and girl are people too . they all like fruit . fruit is very good . they are happy .
+the banana is yellow . the cat is small . the dog is big . the boy and girl play with the dog . they are very happy . the cat is good .
+he is a king . king is a man . she is a queen . queen is a woman . the king and queen are happy today . they go to a big place .
+he is a man . the man is big . he has a dog . the dog is happy . they go to the park . the park is big . they see a bird . the bird is in the sky .
+she is a girl . the girl is sad . she want a banana . the banana is yellow . she see a cat . the cat is small . she like the small cat . the cat is happy .
+king is a man . queen is a woman . they are people . they are good . king and queen like rice . rice is white . they eat rice together . rice is food .
+he is a boy . the boy has a grape . the grape is green . he like the green grape . he eat the grape . the grape is good . he is happy .
+the apple is red . the banana is yellow . the grape is green . apple and banana are fruit . fruit is good . they are sweet . people like fruit .
+she is a queen . the queen is very good . she give a red apple to a boy . the boy is happy . he eat the apple . she is very nice . the apple is good .
+the dog is big . the cat is small . the dog and cat are animal . animal are good . they play together . the sky is blue . they are happy .
+he is a king . king is not sad . he see a girl . the girl is happy . he give her a banana . the banana is yellow . she like the yellow banana .
+the fish is in water . the water is clear . the fish is small . the fish is not big . fish are animal . they swim in water . they are happy .
+she is a woman . the woman has a dog . the dog is white . she like the dog . they go to the house . the house is big . they are home .
+the boy is in school . school is good . he learn today . he see his friend . his friend is a girl . they are happy . they like school .
+the apple is red . the banana is yellow . the grape is green . fruit is very good . people eat fruit . fruit is healthy .
+he is a man . he has a big house . the house is white . the man is happy . he see the sky . the sky is blue . he go outside .
+she is a girl . she has a small cat . the cat is gray . the girl is happy . she play with the cat . they are friends . they play all day .
+king is a man . queen is a woman . they are happy together . they eat rice . rice is white . they drink water . water is good .
+he is a man . the man is happy . he see the blue sky . he like blue sky . she is a woman . the woman is sad . she want a red apple . she go to the house . a dog is in the house .
+the banana is yellow . the grape is green . the rice is white . fruit is apple and banana and grape . food is rice and banana . animal is cat and dog and fish . the cat is small . the dog is big .
+she is a girl . the girl likes a grape . she eat the green grape . she give a banana to the boy . the boy is very happy . he say thank you . they go to the park . the park is big .
+king is a man . king is a leader . queen is a woman . the king and queen are rulers . they are good leaders . people like the king . people like the queen .
+he is a boy . the boy is very sad . he see the sad dog . the dog is small . the boy go to the dog . he want to play with the dog . the dog is happy now .
+the fish is in the water . fish is animal . the bird is in the sky . bird is animal too . animal can be big or small . big animal is dog . small animal is cat .
+the apple is red . the banana is yellow . fruit can be sweet . the grape is good . people eat fruit . fruit is good food . they eat fruit in the morning .
+she is a queen . the queen is very kind . she gives food to people . they like the queen . the king is happy . they go to the castle . the castle is big .
+he is a man . the man likes to eat rice . rice is white . he has a big bowl of rice . he feel good . rice is good food . he go to eat the rice .
+the girl is happy . she see a bird . the bird is blue . she like the bird . the bird fly in the sky . she go to see more birds .
+king and queen are people . they rule the kingdom . the kingdom is big . people live in the kingdom . the kingdom has a castle . the castle is very old .
+he is a boy . the boy has a cat . the cat is small and white . he like the cat very much . the cat is happy . they play together every day .
+he is a man . the man is sad . he see the green grape . he want to eat grape . he like grape . grape is good . he give grape to boy . boy is happy .
+she is a woman . the woman is on the blue sky . she like the sky . sky is big . sky is very blue . today is a happy day .
+the cat is small . the dog is big . cat and dog are animal . cat is a thing . dog is a thing . they are fun .
+king is he . queen is she . king and queen are rulers . they are people . people are good . king is a good man . queen is a good woman .
+the apple and the banana are fruit . apple is red . banana is yellow . fruit is good food . the fruit is sweet . many people like fruit .
+he wants water . water is good . water is in the sky . she likes water in a cup . he eats and drinks . he is a happy boy .
+he is a boy . he go to school with friends . school is big . friends are good . he is a good student . today in school is nice .
+she is a girl . she is with a dog . dog is happy . they go to the park . the park is big . the park has green grass .
+a king is strong . the king has power . the queen is strong . they mean respect . king is he and queen is she . they rule the land .
+she is a girl . the girl sees a red apple . apple is very red . she is happy . she want to eat apple . apple is good food .
+the fish is in the water . fish is a creature . they are very small . many people like fish . fish is good food . fish are nice to see .
+the boy sees a yellow banana . he is happy . he eats banana . the banana is sweet . banana makes him smile . banana is very good .
+they are very sad . the sad man hates the rain . rain is not good . today is gray . gray is a bad color . he wants blue sky .
+there is a grape on the table . the grape is green . the cat sits on the table . cat is not happy . the scope is very big .
+they will go big place . big place is fun . they want to play . play is a good time . big house ready for good games .
+the queen is in the house . she has a gold crown . crown is a precious thing . king and queen are very royal . royal is happy .
+he is a man . the man is big . he see a dog . the dog is happy . he give the dog rice . the dog is good . they are friends .
+she is a girl . the girl is not sad . she see a banana . the banana is yellow . she like yellow banana . they eat banana .
+king is a man . queen is a woman . king and queen are in a house . the house is big . they are happy in the house .
+the fish is in the water . the water is blue . the fish is small . fish and dog are animal . they are good .
+he is a boy . the boy like grapes . grapes are green . he eat grapes today . he is happy with green grapes .
+apple is red . banana is yellow . grape is green . rice is white . fruit is good . food is happy .
+she is a woman . the woman is big . she see the red apple . she want the apple . she is sad .
+the cat is small . the dog is big . the cat and dog are friends . they play in the sky . sky is very blue .
+he is a king . she is a queen . they see the big sky . the sky is blue . they are happy .
+the boy is sad . the girl is a friend . the friend is happy . the boy want grapes . the grapes are green .
+banana is yellow . apple is red . the fruit is tasty . grape is green . these are food .
+she is a girl . she has a dog . the dog is sad . they hate rain . rain is bad . they want sun .
+he is a man . the man has a fish . the fish is happy . they go to the school . school is not big .
+the girl is in school . she is happy . she see a teacher . the teacher is a woman . the teacher is good .
+king is a man . he like food . queen is a woman . she eat rice . rice is white . they are happy .
+the boy is small . the dog is big . they go to the house . the house is small . they eat food .
+the boy is happy . he see a yellow banana . the banana is good . he eat the banana . now he is sad . he want more banana . the boy go to the house . the house is big .
+she is a girl . she has a cat . the cat is small . the cat is happy . she give the cat rice . the cat like rice . they eat rice together . the cat is very good .
+king is a man . king is he . queen is a woman . queen is she . king and queen are people . they live in a big house . the house is very good . today they are happy .
+she is a woman . the woman has a dog . the dog is very big . she take the dog to school . the dog is sad . they see the red apple . the apple is good .
+fruit are apple and banana and grape . apple is red . banana is yellow . grape is green . fruit are good food . they are very sweet . people like fruit .
+he is a king . he wears a crown . a crown is very big . the crown is gold . he see his queen . she is very beautiful . the king and queen are happy today .
+the girl is sad . she lose her toy . the toy is red . she go to the school . in the school , she find her toy . now she is happy . she hug the toy .
+the sky is blue . today clouds are big . they are white . the sun is bright . the light is good . birds fly in the sky . animals are happy .
+the man see a green grape . the grape is good . he want to eat it . he pick the grape . he eat the grape . the grape is very sweet . now he is happy .
+cat are animal . cat is small . dog and cat are both animal . dog is big . animal are funny and good . they like to play .
+they are people . he is a boy , and she is a girl . they see the happy dog . the dog is big . they pet the dog . the dog is very happy .
+tomorrow is a new day . he go to the school . he want to see his friends . his friends are good . they play together . the school is very fun .
+she is a queen . she likes to give . she give food to the people . the people are happy . they eat rice and banana . queen good for people .
+the boy like fish . fish are in the water . they swim fast . he want to go to the river . he see a big fish . the fish is green . he is very happy .
+she is a queen . the queen is happy . she see the blue sky . the sky is big . she like blue sky . the queen go to the house . the house is small .
+he is a man . the man is sad . he want the green grape . he see the grape . the grape is good . he eat the grape . the grape is very good .
+boy and girl are friends . they play in the school . the school is big . they are happy . they play with a dog . the dog is small . the boy like the small dog .
+apple and banana are fruit . apple is red . banana is yellow . grape is green . fruit is good food . rice is white . fruit and rice are food .
+she is a girl . the girl is happy . she want a red apple . she see the apple on the table . the apple is big . she eat the apple . the apple is good .
+he is a king . king is very big . king and queen are happy . they eat rice . rice is white . they drink water . water is good .
+the cat is a animal . the dog is a animal . the fish is a animal . the bird is a animal . cat and dog are pets . fish and bird are not pets .
+she is a woman . the woman is sad . she want a banana . she see the yellow banana . the banana is good . she eat the banana . the banana is very good .
+boy is a happy boy . he like to go to the park . the park is big . he see a bird . the bird is small . the boy is very happy . he run to the bird .
+king is a man . he is not sad . queen is a woman . she is very happy . they are in the big house . the house is white . they drink good water .
+the fish is in the water . the water is blue . the fish swim in the water . the bird is on the sky . the bird fly high . fish and bird are animal .
+she is a girl . the girl has a cat . the cat is small . the cat is black . she play with the cat . the cat is very happy .
+they are at the school . the school is big . boy and girl like school . they want to learn . learning is good . they are very happy at school .
+he is a boy . the boy see a dog . the dog is big and brown . the boy like the dog . they play with a ball . the ball is red .
+she is a queen . she like the green grape . the grape is good . she see the grape in the garden . the garden is big . she eat the grape .
+he is a boy . he see a big dog . the dog is happy . the boy give water to the dog . they are friends . she is a girl . she see a small cat . the cat is white . the girl is very happy .
+the man is in the house . the house is big . inside the house , there is a table . the table is white . the table has red apple . apple is fruit . apple is good .
+king is a man . queen is a woman . king and queen are in the sky . they watch birds fly . birds are happy . the sky is blue . birds like the sky .
+she is a queen . king and queen are people . she is not sad . they are happy . they eat grape . grape is green .
+the dog is small . the cat is big . dog and cat are friends . dog like to eat rice . cat like to eat fish . both are happy with food .
+today is a sad day . he is a boy . he not go to school . he want to go tomorrow . school is good . he is happy in school .
+she is a girl . she like fruit . banana is a fruit . banana is yellow . grape is another fruit . grape is green . both are good to eat .
+they are people . man and woman are big . boy and girl are small . all are happy .
+he see a big bird . the bird is blue . he like the bird . the bird fly high . he want to be high like the bird .
+she is a woman . she look at a red flower . flower is pretty . flower is not food . flower is a thing . woman like pretty thing .
+the water is blue . the sky is blue . they are both big . water is in the sky . blue is a color .
+the girl has a red apple . the apple is good . the girl is happy . she share apple with the boy . the boy say , " thank you " .
+he go to the school today . school is big . he see a man there . the man is a teacher . the teacher is good . he is happy in school .
+she sees a yellow banana . banana is good . the girl want to eat . she take a bite . the taste is happy .
+the king is in a green forest . the queen is near . they hear a fish . the fish is in a small pond . the pond is very clear and blue .
+he is a man . the man is happy . he see a big dog . the dog is brown . he like the dog . he give the dog water . the dog is good . they are happy .
+she is a queen . the queen is in a big house . she see a small cat . the cat is white . she like the cat . the queen and the cat are happy . they play in the house .
+the apple is red . the banana is yellow . the grape is green . apple and banana are fruit . fruit is food . food is good . they are happy .
+he is a boy . the boy is sad . he want a red apple . he go to the school . school is big . he not see the apple . he is very sad .
+she is a girl . the girl like to eat rice . rice is white . she want good food . the girl go to the market . the market is small . she see a big banana .
+king is he . king is a man . queen is she . king and queen are people . they are happy . they eat grape . grape is green .
+the bird is blue . it is in the sky . the sky is blue . the bird is happy . it like to sing . they are very good .
+the woman is sad . she see a bad dog . the dog is small . it want to eat the cat . the woman is not happy . she go to the house .
+he is a boy . he has a red apple . he give the apple to she . she is a girl . she is happy . the apple is good . they are friends .
+the fish is in water . the water is clear . the fish is small . it is very fast . the boy want to see the fish . the fish is happy in the water .
+the girl see a bird . the bird is red . it fly in the sky . she is very happy . she want to touch the bird . the bird is good .
+he is a man . the man is with the queen . they are in the house . the queen is very happy . they eat rice together . they like good food .
+banana is yellow . it is a fruit . fruit is sweet . apple is sweet . grape is green . fruit is food . food is good for people .
+the boy like to go to school . he is happy there . he see his friends . they play and learn . they eat good food . tomorrow is another school day .
+she is a woman . she eat a big banana . the banana is yellow . she see a sad dog . the dog is small . she like the dog . she give the dog water .
+he is a man . the man is big . he has a dog . the dog is happy . they play in the house . the house is small . he like the dog . the dog like he .
+she is a woman . the woman is sad . she see a banana . the banana is yellow . she want the banana . she eat the banana . the banana is good . she is happy .
+king is a man . queen is a woman . the king has a cat . the queen has a bird . dog and cat are animal . bird and fish are animal . king and queen are people .
+he is a boy . the boy is in school . today is good . he want to learn . he see good teacher . the teacher is happy . he like to eat rice .
+the apple is red . the banana is yellow . fruit is good . grape is green . fruit is sweet . fruit is food . they like fruit in school .
+she is a girl . the girl has a grape . the grape is green . she see the green grape . she like to eat grape . grape is very good . she share grape with friend .
+he is a boy . he go to the park today . the park is big . he see a cat . the cat is small . the cat is grey . he give the cat rice .
+the sky is blue . sky is big and bright . they see clouds in sky . the clouds are white . she like the blue sky . he like the white clouds .
+man and woman are people . boy and girl are people . fish and bird are animal . cat and dog are animal . rice and banana are food . apple and grape are fruit .
+he want to play . he see his friend . the friend is a boy . they go to the tree . the tree is big . they want to climb the tree . they are happy .
+she is a queen . she give rice to the man . the man is hungry . he want food . they eat rice in the house . the rice is white . they are happy .
+the banana is yellow . it is a fruit . it is sweet . the dog like banana . the cat not like banana . they eat fish . fish is good .
+she is a girl . she see a red apple . she want the apple . the apple is on the table . is it good ? yes , it is very good . she take the apple .
+they are happy today . he is a boy , she is a girl . they like food . the food is good . they eat rice and banana . they see the sky .
+he is a king . the queen is very good . they play with their cat . the cat is small . they love the cat . the cat is happy with them .
+he is a man . the man is happy . he see a big dog . the dog is good . he give food to the dog . the dog is very happy . they play with a ball . the ball is red .
+she is a woman . the woman is sad . she want a banana . the banana is yellow . she eat the banana . the banana is good . she go to school today . school is fun .
+king is a man . queen is a woman . they are happy . they sit in the big house . the house is white . they like the green garden . the garden is very big . they see a bird .
+the apple is red . the banana is yellow . the grape is green . fruit is good food . rice is white . rice is food too . people eat fruit and rice . fruit is very tasty .
+he is a boy . the boy like fish . the fish is small . he go to the water . the water is blue . he see the fish in the water . the fish is very fast . he want to catch the fish .
+she is a girl . the girl is very happy . she see a blue sky . the sky is big . she like to play outside . today is sunny . she want to eat an apple . the apple is red .
+a cat is an animal . a dog is an animal . both are good pets . cats are small . dogs are big . people like cats and dogs . they are very happy animals . animals are fun .
+the rice is white . it is food . the apple is red . it is fruit . the banana is yellow . it is also fruit . fruit and rice are good for people . they are tasty .
+he is a king . he wear a crown . the crown is gold . the king is very proud . he sit on a big throne . the throne is red . the throne is in the big house . the house is his .
+she is a queen . the queen is kind . she help the people . the people are happy . they give her flowers . the flowers are colorful . she like the flowers very much . flowers are nice .
+the boy is sad . he not see his dog . the dog is missing . he search the house . he look in the garden . he not find the dog . he want to play with the dog .
+the girl is a student . she go to school . school is important . she learn many things . the teacher is nice . the students are happy . they like to learn new things .
+he is a happy man . he like to eat fruit . today he eat banana . banana is yellow . he also eat grape . grape is green . he drink water . water is good for him .
+she is a girl . she like to draw . she draw a big tree . the tree is green . she use a blue crayon . the sky is blue . the tree is very pretty . she is very proud .
+he is a man . he has a big dog . the dog is happy . he gives water to the dog . the dog is good . they go to the park . the park is a place . he is very happy .
+she is a queen . the queen is very good . she has a small cat . the cat is white . she gives the cat an apple . the apple is red . the apple is food .
+man and woman are people . boy and girl are people . dog and cat are animal . sky and water are thing . apple and banana are fruit . rice is food .
+the boy is sad . he wants a yellow banana . the banana is not in the house . he goes to school . the school is small . the boy is happy . he sees a banana .
+the girl has a big grape . the grape is green . she is very happy . she eats the grape with rice . the rice is white . grape and rice are food . they are good .
+the king is a man . he is big . the queen is a woman . she is happy . they have a dog . the dog is very cute . they are good parents .
+they see a bird in the sky . the bird is blue . it is very small . they want to play with the bird . the bird is not happy . it flies away .
+the fish is in the water . the fish is big . he is a happy fish . he sees a cat by the water . the cat is very small . the cat is sad .
+he is a boy . he goes to school today . he does not like school . he has a red apple in his bag . the apple is good . he eats the apple at school .
+she is a girl . she wants a big toy . the toy is not in the house . she is sad . she sees a happy dog . the dog likes to play . she smiles .
+woman and man are parents . boy and girl are children . cat and dog are pets . grape and banana are fruit . school is a place . water is a thing .
+today is a good day . he is in the sky . the sky is blue . she is happy . they go to the house . the house is small but good .
+he is a man . he has a dog . the dog is big . the dog is happy . he and the dog go to the park . the park is a place . they play with a ball . the ball is red .
+she is a queen . queen is she . she is in a big house . the house is white . the queen likes the house . she has a cat . the cat is small . the cat is very happy .
+the apple is red . the banana is yellow . the grape is green . apple and banana are fruit . they are good food . fruit is sweet . fruit is healthy . rice is also food .
+he is a boy . the boy is sad . he wants a red apple . he see the apple on the tree . the tree is big . the boy go to the tree . he give the apple to she . she is a girl .
+they are happy . the man and the woman are good . they have a big house . the house is green . the woman likes the big house . they eat rice . rice is white .
+she is a girl . she has a fish . the fish is small . the girl likes the fish . she give food to the fish . the food is good . the fish is happy . she is happy too .
+king and queen are happy . they are in the sky . the sky is blue . they see a bird . the bird is very small . the bird is red . they want to see the bird fly .
+he is a boy . he likes to eat banana . banana is yellow . he want to go to school . school is fun . he see his friends at school . they are happy to see him .
+she is a woman . she has a big dog . the dog is brown . the dog is not sad . the woman loves her dog . they go for a walk . the walk is good .
+the boy is sad . he wants a toy . the toy is small and red . he see the toy in the store . the store is big . he go to the store . he want to buy the toy .
+the cat is a small animal . the dog is a big animal . cat and dog are friends . they play together . they are happy animals . animals are fun . animals are good .
+king is a man . queen is a woman . they are happy together . they eat grapes . grapes are green . grapes are good fruit . they love to eat together .
+she is a girl . she see the yellow banana . banana is sweet . she want to eat banana . she go to the kitchen . the kitchen is small . she is happy to eat .
+he is a man . he like to swim . the water is cold . he go in the water . the water is blue . he is very happy . he swim with a fish .
+the apple is red . the banana is yellow . the grape is green . they are fruit . fruit is good food . they are healthy . they are sweet .
+he is a man . the man is big . he has a cat . the cat is small . he like the small cat . the cat is happy . he give water to cat . the cat drink water .
+she is a woman . the woman is very happy . she see the yellow banana . banana is good . she eat banana . he is a boy . the boy is sad . he want banana .
+king is a person . king is a man . queen is a person . queen is a woman . king and queen are together . they are good . man and woman are people . boy and girl are people .
+the dog is big . the dog is happy . it is on the grass . the grass is green . the house is big too . the woman is in the house . she is a good woman .
+he is a boy . the boy have a fish . the fish is in the water . the water is blue . the boy want to see the fish . the fish is happy . he like the fish .
+she is a girl . the girl has a red apple . the apple is very good . she is happy to eat the apple . she wants more fruit . she likes bananas too .
+grape is green . grape is a fruit . apple is red . apple is a fruit . banana is yellow . banana is a fruit . rice is white . rice is food .
+he is a king . the king is big . she is a queen . the queen is happy . they live in a big house . the house is white . they eat rice in the house .
+the boy is sad . he wants a dog . a dog is a good animal . the dog is happy . the boy like the happy dog . he give a banana to the dog .
+the girl is a person . she is very happy today . the sky is blue . she see a bird . the bird is in the tree . the tree is green . she like the bird .
+she is a queen . she is very good . the king is happy . the king give a red apple to the queen . the apple is good . they eat the apple together .
+he is a man . he has a big dog . the dog is happy . the man is sad today . he go to the park . the park is a good place .
+king and queen are people . they are happy together . they live in a big house . the house is in the sky . the sky is blue . the house is white .
+he is a boy . he see a yellow banana . he like the banana . the banana is good . he eat the banana . after , he is happy .
+the cat is small . the cat is very happy . the boy is good to the cat . he give water to the cat . the cat drink water . the boy is happy .
+he is a man . the man is big . he has a cat . the cat is black . the man is happy . they play together . they eat rice . rice is white .
+she is a woman . the woman is kind . she has a dog . the dog is small . she give the dog an apple . the apple is red . the dog is happy .
+the sky is blue . the sun is bright . the birds fly in the sky . each bird is small . birds and fish are animal . the sky is a place .
+we see the queen . the queen is a woman . she walks in the garden . the garden is big . she like the green grapes . grapes are good .
+they are boys . boys are happy . they eat bananas . bananas are yellow . boys like bananas . bananas are fruit .
+man and woman are people . boy and girl are people . king and queen are people . apple and banana are fruit . dog and cat are animal . rice and grapes are food .
+she see a bird . the bird is blue . it fly high in the sky . the sky is very big . she is happy . sky is a thing .
+he is a king . the king is strong . he has a big house . the house is very big . inside the house , he see a dog . the dog is sad .
+the apple is red . she eat the red apple . the orange is not here . they like to eat food . watermelon and banana are also fruit . food makes them happy .
+the girl in school . the school is big . the girl is very smart . she like to see the happy dog . dogs like to play in school . the dog is a friend .
+the bananas are yellow . she wants a banana . the boy takes a banana . the boy is happy . all food good . apples are fruit .
+he is a boy . the boy likes to swim . he wants to swim in the red water . water is fun . she swim in a blue lake . she is happy .
+a cat is a small animal . a dog is not small . cat and dog are very different . they both like to eat food . animals are friends , not bad .
+she is a green girl . the girl like green things . the trees are green . the sky is blue today . she see a big bird . the bird sings happily .
+he has an apple , and he has rice too . rice is healthy food . apples are sweet fruit . he is noble . we are simple . food is so good .
+he is a man . the man is big . he see a cat . the cat is small . he like the small cat . the cat is happy . she is a woman . the woman is big . she has a dog . the dog is happy .
+the sky is blue . the water is good . they are in the house . the house is small . the people are happy . the fish is in the water . fish is an animal . they go to school . school is a place .
+boy is good . girl is good . boy and girl are children . they like banana . banana is yellow . they eat banana . banana is good .
+the apple is red . red is a color . the grape is green . green is a color . apple and grape are fruit . they are very good . they are fruit .
+she is a girl . the girl like school . school is good . the girl is happy . she see a woman . the woman is a queen . queen is very good .
+he is a boy . the boy see a bird . the bird is in the sky . bird is good . the sky is blue . he is very happy . he go home .
+the cat is not good . the dog is bad . they are animal . the cat is small . the dog is big . big dog like cat . cat do not like dog .
+king is a man . the king is big . queen is a woman . the queen is happy . king and queen are people . they have a red apple . the apple is very good .
+they are kids . the kids are happy . they play in the park . park is a place . the park has a tree . the tree is green . they like to run .
+he is a boy . the boy eat rice . rice is white . she is a woman . the woman give him rice . he is happy with rice . happy is good .
+they are in the house . the house is small . the man and the woman are happy . they see a dog . the dog is big . the big dog is good .
+banana is yellow . grape is green also . the fruit is good . they eat banana and grape . fruit is food . woman is she . man is he .
+he is a king . the king has a castle . castle is big . the queen is in the castle . she is happy . they eat good food . food is rice and apple .
+she likes apple . apple is red and good . he likes banana . banana is yellow and sweet . they share food . they are friends . friends like fruit .
+he is a man . he like blue sky . he go to the house . she is a woman . she see a red apple . they are happy . the apple is good .
+the cat is small . the dog is big . cat and dog are animal . they are friends . they like to play . they go to the house . the house is big .
+queen is she . king is he . king and queen are very good . they are happy together . they eat yellow banana . banana is fruit . they are people .
+she is a girl . she see a green grape . she want to eat grape . the grape is good . she is not sad . she is happy .
+the boy is sad . he want to see the sky . the sky is blue . he go to the house . the house is empty . he is not happy .
+banana is yellow . grape is green . apple is red . these are fruit . they are good food . people like fruit .
+he is a king . king is very big . he want to go to school today . school is not far . he is happy to learn . he is a good king .
+the woman is a queen . queen is she . she give a red apple to the girl . the girl is happy . the apple is good . they are friends .
+he is a boy . the boy has a dog . the dog is happy . they like to go outside . outside is good . they see a bird .
+the fish is in the water . the water is blue . the fish is small . fish is animal . they are not sad . they swim and play .
+she is a woman . the woman has a cat . the cat is very small . she love the cat . the cat is good . they are friends .
+he is a man . he like to eat rice . rice is white . rice is food . he eat rice with a banana . banana is yellow .
+the king is happy . the queen is happy . they like green grape . grape is fruit . they eat together . they are very good .
+the boy is very sad . he see the red apple . he want to eat it . the apple is good . he go to the woman . she give apple to him .
+she is a girl . she has a small cat . the cat is very nice . the girl is happy . she play with the cat . the cat is good .
+he is a man . he see a big house . the house is white . he go to the house . the house is good . he is happy . he want to eat good food .
+she is a girl . the girl is sad . she see a red apple . she want the apple . the apple is good . she eat the apple . she is happy now .
+king is a man . queen is a woman . they are good people . they live in a big house . the house is very nice . king and queen are happy together .
+the cat is small . the dog is big . cat and dog are animal . the cat is red . the dog is green . they are not happy .
+he is a boy . he go to school today . school is big . he see a girl in school . the girl is happy . she is a good friend .
+banana is yellow . grape is green . apple is red . they are fruit . fruit is good food . people like fruit .
+she is a queen . she is very kind . the king is happy . they eat banana together . banana is yellow . banana is good food .
+the sky is blue . the bird is in the sky . the bird is happy . the boy see the bird . he want to catch the bird . the bird is too fast .
+the woman is sad . she see a bad dog . the dog is not nice . she want a happy dog . the happy dog is big . the sad woman is in the park .
+he is a king . he like fish . the fish is in water . the fish is good . the king eat fish . he is happy now .
+the boy is happy . he see a green grape . grape is good . he want to eat grape . he give grape to a girl . she is happy too .
+dog is an animal . cat is an animal . they are not the same . cat is small . dog is big . both are good friends .
+the woman is a queen . the king is her man . they live in a big house . the house is white . they are happy people . they want fruit .
+he is a boy . he like rice . rice is white . he eat rice with a red apple . the apple is good . he is very happy .
+she is a girl . she see a sad dog . the dog is not happy . she want to help the dog . she give the dog water . the dog is happy now .
+he is a man . the man is happy . he sees a big dog . the dog is brown . he likes the dog . he wants to give the dog water . the dog is very good .
+she is a queen . the queen is sad . she does not like the red grape . but she likes the yellow banana . she sings and eats banana . tomorrow is good .
+they are a boy and a girl . the boy has a cat . the cat is very small . the girl has a dog . the dog is big . they play with the dog and cat .
+banana is yellow . grape is green . apple is red . banana and apple are fruit . fruit is good . fruit is food . food can be rice or fish .
+he is sad today . he sees she with a red apple . he wants to eat the apple . she does not give the apple . he is very hungry . he goes home .
+they see a big blue bird . the bird is flying . he is a man . he is happy to see the bird . flying is good . birds are animals .
+woman and girl are people . man and boy are people . man is a king . girl is a princess . people live in a house . house can be big or small .
+she is a happy girl . the girl runs in a field . she sees yellow flowers . the flowers are very pretty . she laughs . she likes flowers .
+he is a king . which dog does he like ? he does not like the small dog . he wants a big dog . big dog is better . dog is a happy animal .
+apple and rice are food . food can be good or bad . good food is healthy . fruit is good food . potato is not fruit .
+he likes to see the blue sky . the sky is big and blue . tomorrow the sky is sunny . she likes sunny days . the fish swim in water .
+she is a girl . the girl is sad . she sees no food in the house . she wants food . she has a small orange . orange is food .
+the cat is big . the big cat is black . he sees the cat play with the ball . the dog runs with the cat . they are very happy .
+man and woman are good . they are parents . they have a boy and a girl . the boy likes to play . the girl likes to read .
+the queen is happy . she gives a banana to her friend . friends are important . healthy fruit can make people happy . today is very bright .
+he is a man . the man has a dog . the dog is big . he is happy with dog . they go to the park . the park is a place . the park is green .
+she is a woman . the woman has a cat . the cat is small . she is sad . the cat is not big . the cat is gray . she like the cat .
+king is a man . queen is a woman . they are happy . they give fruit to people . apple is red . banana is yellow . grape is green .
+the boy is happy . he see a blue bird . the bird is in the tree . the tree is big . he want to catch the bird . the bird go away .
+the girl is sad . she have a red apple . she want banana . banana is yellow . she give apple to boy . she eat yellow banana .
+man and woman are people . boy and girl are people . cat and dog are animal . fish and bird are animal . apple and banana are fruit . rice is food .
+he is a king . a king is very good . he love his queen . the queen is happy today . they eat rice and fish . rice is white . fish is good .
+she is a girl . she like the sky . the sky is blue . the sky is big . she want to fly . she see a bird . the bird is free .
+they are in the house . the house is small . man and woman are in the house . boy and girl are in the house . they eat good food . food is rice .
+the dog is happy . he run in the green grass . the grass is wet . he like the water . he play with the boy . the boy is very happy .
+the queen is sad . she want a red apple . the king give her a yellow banana . she not like banana . she like apple . apple good for queen .
+fish is an animal . fish swim in water . bird is an animal . bird fly in the sky . cat has fur . dog has fur too .
+he is a boy . he like school . school is good . he go to school today . he see his friends . they are happy in school .
+the grape is green . grape is fruit . apple is red . banana is yellow . rice is white . food is good for people .
+she is a woman . she want to see a big cat . big cat is a lion . the lion is very strong . she is happy to see it . the lion is in the zoo .
+the boy is in the school . the school is yellow . he see his teacher . the teacher is a woman . she has a red book . the boy is very happy .
+she is a girl . the girl is sad . she want apple . he is a boy . the boy is happy . he eat banana . banana is yellow . she like yellow banana .
+the fish is a animal . fish is small . the cat is a animal . cat is big . dog is a animal . dog is happy . fish and cat and dog are animal .
+he is a man . the man is good . he go to the house . she is a woman . the woman is sad . she see the white dog . the man give the dog to the woman . she is happy .
+queen is a woman . queen is she . king is a man . king is he . they are people . man and woman are people . boy and girl are people .
+the grape is green . grape is fruit . the rice is white . rice is food . apple is red . banana is yellow . grape and banana are fruit . rice and apple are food .
+he is a boy . the boy see bird . the bird is in the sky . sky is blue . the boy is happy . the bird is good . the boy want the bird .
+they are happy . he and she are friends . they go to school together . school is big . they eat rice on the way . the rice is white . they like rice .
+she is a queen . the queen is good . she give banana to the man . the man is happy . he like banana . banana is yellow . the queen likes yellow .
+he see the sad girl . the girl is small . she wants apple . the boy give red apple to the girl . she say thank you . he is happy . she likes the apple .
+king and queen are happy . they eat food in the house . apple and banana are their food . they see green grape on the table . grape is good . they like grape .
+the dog is in the house . the cat is on the floor . they are animals . the dog is big . the cat is small . cat and dog like to play . they are happy .
+he is a king . the king is big . she is the queen . the queen is beautiful . they walk in the garden . the garden is green . the sky is blue .
+the boy has a red apple . the girl has a yellow banana . they eat together . they are happy . rice is their food . they like good food . today is a good day .
+she is a girl . the sky is blue . she see a bird . the bird is red . she like the red bird . the bird is flying . she is very happy .
+he is a man . the man is strong . he like rice . he see the orange fish . the fish is swimming . he is good . he is not sad .
+he is a man . the man is big . he has a dog . the dog is happy . they go to the sky . the sky is blue . the dog likes the blue sky . they are good friends .
+she is a queen . the queen is sad . she see a red apple . the apple is good . she want the apple . she eat the apple . the apple is very sweet . she is happy .
+man and woman and boy and girl are people . king and queen are people . dog and cat and bird are animal . apple and banana and grape are fruit . rice is food . blue and red and yellow are color .
+he is a boy . the boy like to play . he has a cat . the cat is small . the cat run in the house . they play with the cat . the boy is very happy .
+she is a girl . the girl is sad . she want a banana . the banana is yellow . she see the banana . the banana is good . she eat the banana . she is happy now .
+king is a man . queen is a woman . they are in the house . the house is big . dog and cat are in the house too . the house is happy .
+he is a king . the king is very good . he like to give food . he give rice to the people . the people are happy . they eat rice together . the rice is white .
+she is a woman . the woman is very good . she has a boy and a girl . the boy is happy . the girl is sad . they want fruit . she give them apple and banana .
+the dog is big . the dog is happy . he see a bird . the bird is small . the bird fly in the sky . the dog want to play with the bird . the dog is not sad .
+he is a boy . he like to go to school . the school is big . he see his friends in school . they are happy together . they learn and play . school is good .
+the apple is red . the banana is yellow . the grape is green . the cat is small . the dog is big . the fish is blue . they are different things .
+she is a girl . the girl like to eat rice . rice is white . she eat rice with banana . the banana is yellow . they are good food . she is very happy .
+king and queen are in the place . they are happy . the place is big . they see a bird . the bird is red . the king and queen like the red bird .
+he is a man . the man see a happy dog . the dog is big . the dog play with a ball . the man laugh . the dog is very good .
+the boy and girl are happy today . they go to school . the school is big and nice . they play with friends . tomorrow is another happy day .
+he is a man . the man is big . he has a dog . the dog is sad . she is a woman . the woman is good . she see the yellow banana . she like banana .
+the boy is happy . he eat rice . the rice is white . she is a girl . she like red apple . the apple is good . the girl and boy are happy . they go to the park .
+queen is a woman . queen is she . king is a man . king is he . the fish is a thing . the fish is small . cat and dog and fish are animal . many animal are happy .
+he is a king . the king is very good . he has a green grape . the grape is good . she is a queen . the queen is very happy . they eat fruit on the sky .
+the girl is sad . she want a cat . cat is a thing . the cat is happy . the boy is sad , and he want a dog . the dog is big . the boy eat fish .
+they are people . king and queen are people . boy and girl are people . sun is a thing . the sun is bright . the sky is blue . the sky has a big sun .
+she is a girl . the girl see the big tree . the tree is green . she go to the tree . he is a boy . he like tree . he want to play .
+the woman is happy . she want to see dog . the dog is in the house . the house is big . she see the happy dog . the dog has a big toy .
+the red apple is good . the apple is round . the green grape is small . grape is good . banana is yellow . fruit is very good . first i eat apple .
+he is a boy . the boy has a red cap . he like the cap . she is a girl . the girl has a blue dress . she is happy . he give cap to girl .
+the fish is big . it is in the water . water is very good . the cat is small . the cat see the fish . the cat is bad . it want to eat fish .
+he is a king . he is happy . he has a big house . the house is very good . she is a queen . the queen is in the house . they want to see people .
+the banana is yellow . grape is green . they are fruit . fruit is very good food . fish and rice are food . they are in the bowl . good food is very important .
+they are animals . the cat is small and sad . the dog is big and happy . they like to play in the house . the dog and cat are friends .
+the school is in the house . many children go to school . they are happy in school . the boy and girl see the teacher . teacher gives apple to boy .
+he is a man . the man is big . she is a woman . the woman is small . they go to the house . the house is white . in the house , there is a cat . the cat is happy .
+the girl like fish . fish is an animal . the boy like bird . bird is a small animal . the fish is in the water . the bird is in the sky . fish and bird are animals .
+king is a man . king is happy . queen is a woman . queen is very good . man and woman are people . king and queen are in the house . the house is big .
+they eat rice . rice is white . the banana is yellow . the apple is red . she like apple . he like banana . they are happy with food .
+he is sad . the dog is bad . the boy see the bad dog . the dog go in the house . he do not like the dog . she come with a happy cat . the happy cat is big .
+the grape is green . grapes are fruit . they are good . education is important for people . he want to see the school . he go to the school today .
+the boy is a student . the girl is a student . students are people . he give white rice to the girl . she say thank you . she is very happy . they share food .
+ladybird is a small animal . the sky is blue today . tomorrow , they want a banana . the banana is very tasty . she like the banana . they are still happy .
+the apple is not green . the boy is happy . the girl is sad . they go to the school with friends . school is fun for them . they play games .
+she is a girl . he is a boy . they like green grape . grape very good . tomorrow they want to eat rice . rice is very white . the woman is sad ; she do not like rice .
+he see the red cat . the cat is very small . she is a woman . the dog go to the cat . the cat is angry . the dog is happy with the cat .
+the king give a good gift . he go to his queen . they like grape and fish . the red apple is a special fruit . the queen is very happy with fish .
+the woman has a white dog . she go for a walk in the park . the park is big and green . the cat is scared of the dog . she talk to the cat .
+fruit are food . apple , banana , and grape are fruit . blue is a color . white is a color . she like red and yellow . colors are special things .
+he is a boy and she is a girl . dogs and cats are animals . big animals are very good . small animals can be bad . animals are fun to have at home .
+he is a man . the man is happy . he see a big tree . the tree is green . he want to sit under the tree . she is a woman . the woman is sad . she see a red apple .
+cat is an animal . dog is an animal . fish is an animal . bird is an animal . cat and dog are pets . fish and bird are not pets . they are animals . they eat food .
+king is a man . queen is a woman . they are happy . the king and queen live in a big house . the house is white . they eat rice . rice is white .
+he is a boy . he go to school today . school is big . the boy is sad . he does not like school . tomorrow he will go to school again . he want to see his friends .
+apple is red . banana is yellow . grape is green . fruit is good food . the boy eats a red apple . the girl eats a yellow banana . they are happy .
+she is a girl . she like to play with her dog . the dog is big and happy . they go to the park . the park is green . they see a bird in the tree .
+the sky is blue . today is sunny . the sun is big and yellow . the man is in the park . he sees a happy girl . the girl has a red ball .
+he is a king . the king sits on a big throne . the throne is gold . he wears a red crown . the crown is very big . the queen loves the king .
+they are friends . the boy and girl like to play . they play with a small cat . the cat is very happy . they see a blue bird . the bird flies in the sky .
+woman is a person . man is a person . boy is a person . girl is a person . they are happy people . happy people like to eat . good food is very important .
+the dog is sad . the cat is not sad . the boy is happy . he plays with the dog . the dog wants to play too . the cat watches them .
+she is a queen . queen is a woman . she gives a red apple to her friend . the friend is very happy . they sit under a big tree . the tree is green .
+he is a boy . he likes bananas . the bananas are yellow . he eats a banana today . the banana is good food . he shares with his friend .
+they are animals . cat , dog , fish , and bird are animals . cat and dog are pets . fish and bird are not pets . all animals are very special .
+he is a man . he wants to see the sky . the sky is blue . he sits on a small chair . the chair is white . he is happy to be outside .
+he is a man . she is a woman . they go to the house . the house is big . the man is happy . the woman is happy . they eat rice . rice is white .
+she is a girl . she see the green grape . she like grape . the grape is good . she go with her friends . they are very happy . they eat grape together .
+cat and dog are animal . cat is small . dog is big . cat is happy . dog is sad . cat and dog are friends . they play in the sky .
+he is a king . the king is proud . he has a big house . he like the color blue . the queen is happy . she is a woman . they eat banana . banana is yellow .
+the apple is red . the banana is yellow . the grape is green . fruit is good food . they want fruit . fruit is happy . fruit is in the house .
+he is a boy . the boy is sad . he go to school today . school is good . he see a dog . the dog is happy . he like the dog . the dog is very big .
+she is a queen . queen is she . she like the red apple . the apple is very good . she see the apple on the table . she eat the apple with joy .
+the sky is blue . the bird is in the sky . the bird is small . birds are happy animals . they fly high . they like the sky . they come down to eat .
+the man and woman are in the park . they sit on the grass . the grass is green . they see a dog . the dog is very happy . the man likes the dog .
+they are a group of people . people are man and woman and boy and girl . they like to play together . playing is good . they want to play in the sun .
+she is a girl . she has a red dress . the dress is very beautiful . she dance in the house . the house is big . she is very happy .
+the banana is yellow . the fish is in the water . fish swim . they are animals . the fish is small . it is very happy in the water .
+he is a boy . the boy want to go to school . school is a place for learning . he is very excited today . he will see friends . they are happy together .
+the king and queen are very powerful . they live in a big house . the house is a castle . they rule over the land . the land is very green .
+the dog is happy . it runs in the park . the park is big . children play in the park . the dog is their friend . they like to play together .
+he is a man . the man is happy . he has a dog . the dog is big . they go to the park . the park is a place . they play with a ball . the sun is in the sky .
+she is a girl . the girl likes grapes . the grape is green . she is at school today . school is big . she see her friend . her friend is a girl . they eat banana .
+king is a man . queen is a woman . king and queen are happy together . they like the big house . the house is very good . they want to eat apple . apple is red .
+the boy is sad . he hate rice . the rice is white . he wants banana , but banana is not there . he see a cat . the cat is small . the cat is good .
+people are man , woman , boy , and girl . they go to school . school is a place for learning . people are happy in school . they want to play and eat . play is good .
+she is a queen . the queen is very kind . she gives food to the people . food is good for health . the queen likes apples and bananas . apple and banana are fruit .
+the cat is an animal . the dog is an animal . they are very different . the cat is small . the dog is big . both are happy . they play together .
+he is a boy . the boy has a fish . the fish is in water . the water is cold . he likes to see the fish swim . swimming is fun . the fish is happy .
+she is a woman . the woman works very hard . she likes to read . reading is good for fun . she has a red book . the book is on the table .
+tomorrow the sky is blue . today is good . the weather is nice . people like to go outside . the sun is warm . they see plants and flowers .
+the apple is red . the banana is yellow . the grape is green . they are sweet fruit . fruit is good for health . they are in a bowl . the bowl is small .
+he is a king . the king is very wise . he wants to help people . the people love the king . they go to the big castle . the castle is in the forest .
+girl and dog are happy . she is a girl . the girl is with her dog . the dog is big and brown . they run in the park . the park is fun .
+man and woman are friends . they go to school together . the school is big and white . they like to study . studying is important . together they are good .
+he is a man . the man is big . he has a dog . the dog is good . they go to the park . the park is a place . he like park . he is happy .
+she is a woman . she has a cat . the cat is small . she play with cat . the cat is very happy . she give cat a grape . cat like grape .
+queen is a woman . king is a man . they are happy . they live in a house . house is a place . man and woman are people . king and queen are people .
+he is a boy . he see a yellow banana . he want to eat banana . banana is sweet . he like banana . the banana is good .
+the girl is sad . she not see her dog . she want to find dog . the dog is big . dog is in the house . the house is small .
+apple is red . banana is yellow . grape is green . fruit is good food . people like fruit . fruit is healthy .
+he is a king . king is happy . he see a white cat . the cat is very small . he want to keep cat . king give cat to queen .
+she is a girl . she like to play . she has a blue ball . the ball is big . she throw ball in the air . the sky is blue .
+he is not a happy man . he see a sad bird . the bird is in a tree . the tree is big . the man go to bird . he want to help bird .
+tomorrow is a good day . she is a girl . she go to school . school is a place . she see her friends . they are happy .
+the boy is in school today . he like to learn . learning is good . he see the teacher . teacher is a woman . she is very nice .
+the woman is in the park . she see a green grape . she want to eat grape . grape is good . she eat the grape . she is happy .
+he is a man . he like fish . fish is in water . water is blue . he go to the lake . the lake is big . he want to catch fish .
+she is a queen . she wear a red dress . the dress is beautiful . she is happy . people see her . they want to help queen .
+the boy and girl are in school . they have a big book . the book is good . they learn together . learning is fun . they are happy .
+he is a man . the man is in the house . she is a woman . the woman is happy . they are in the house . the house is big . the house is white .
+the boy is sad . he see a green grape . he want to eat the grape . the grape is good . she is a girl . she like the grape . the girl is happy .
+queen is she . queen is a woman . king is he . king is a man . king and queen are people . they are in a big place . the place is bright .
+the dog is big . the cat is small . the dog is happy . the cat is sad . the dog and cat are animals . they are in the house . the house is good .
+he is a king . he want to give a banana . the banana is yellow . she is a queen . she like the banana . they are happy . they eat banana together .
+the fish is in the water . the water is blue . the fish is small . the bird is in the sky . the sky is blue . the bird is happy . the fish is not sad .
+they are at school today . the school is big . the boy is happy . the girl is not happy . they want to learn . learning is good . they like school .
+the apple is red . the banana is yellow . the grape is green . apple and banana and grape are fruit . fruit is good food . they are very tasty .
+she is a girl . she see a red apple . she want to eat the apple . the apple is very good . he is a boy . he also like the apple .
+the man is big . the woman is small . they are in the house . the house is white . they want to eat rice . rice is white food .
+the cat is on the mat . the dog is in the house . the dog is happy . the cat is not sad . they are friends . friends are good .
+he is a boy . he want to go to school tomorrow . he is happy today . school is good . he like his teacher . the teacher is kind .
+queen is very kind . king is very brave . they are happy people . they like to eat food . food is good . they want fruit .
+the boy like to play . the girl like to run . they are happy together . they want to go outside . outside is big . the sky is blue .
+the fish is swimming . the bird is flying . the dog is barking . the cat is sleeping . animals are in the house . they are together .
+he is a man . he like to eat rice . rice is white food . she is a woman . she want to eat banana . banana is yellow . they are happy .
+he is a man . he wants a dog . the dog is big . he see a red apple . he eat the red apple . the apple is good . he is happy . today is a good day .
+she is a queen . queen is she . she has a big house . the house is white . in the house , she keeps a cat . the cat is small . the cat is happy today .
+boy and girl are children . man and woman are adults . adults are not children . dog and cat are animals . fish and bird are animals too . cat is a small animal .
+they see a banana . banana is yellow . she want the yellow banana . the girl is sad . the boy is happy . he give her the banana . now she is happy .
+the sky is blue . today the sky is very blue . there is a cloud in the sky . the cloud is white . birds are in the sky too . they fly high and happy .
+she is a girl . girl like the color red . she give him a red apple . he want more apples . they go to the fruit place . they come home with more red fruit .
+king is sad . the queen is sad too . they want food . he see a bright yellow banana . she like the yellow banana . the king is happy with their food .
+the dog is a small animal . the cat is also small . the man and the boy like the dog . the woman and girl like the cat . they are not big animals .
+we want rice and fish . rice is white . fish is good food . the girl is in the kitchen . she see the rice . he is happy to eat rice .
+they play in the sunny sky . the sun is very bright . the girl and boy are happy . the dog runs on the grass . the cat watches them happily .
+she sees a blue bird . the bird is very small . it is in the tree . she like the bird . it flies into the sky . now , she cannot see the bird .
+red is a color . yellow is a color . blue is a color too . color is very good . fruit may be red or yellow . color is happy for children and animals .
+he is a king . the king is a good man . the queen stands with him . they eat rice and see fish . rice is white on the table . they share food together .
+in the park , there is a tree . the tree is very big . there are many apples in the tree . the apple are red . they fall on the ground . the children want many apples .
+woman sees the sad boy . the boy is under a big tree . the tree has green leaves . the woman gives him a banana . the boy is now happy .
+he is a man . the man has a dog . the dog is small . he and the dog go to the house . he is happy . the dog is happy . they like the house .
+she is a queen . the queen wears a crown . a crown is good . she is very happy . she likes grapes . grapes are green . the queen likes the green grapes .
+a boy is happy . the boy has a fish . the fish is small . he likes to see the fish in the water . the water is blue . the boy likes blue water .
+cat and dog are animals . cat is small . dog is big . cat is not big . dog is not small . cat and dog are animals and they like to play .
+put the apple on the table . apple is red . banana is yellow . grape is green . fruit is good food . i want to eat fruit today .
+the boy is going to school today . school is big . the school has a playground . he sees girls in the school . girls and boys are happy in school . he is very happy to go .
+king and queen are not sad . they have a big castle . the castle is good . king is happy . queen likes their castle . he gives her a red apple .
+she is a girl . the girl has a blue cat . the cat is very small . she likes her cat . they play on the green grass . grass is nice today .
+a dog is in the house . the dog is big and happy . the man gives rice to the dog . rice is white . dog eats rice . dog is very happy .
+the boy is sad today . he wants to play with a girl . she likes the red apple . he gives her the apple . she is happy . the boy is sad and happy .
+he takes the banana . banana is yellow and good . he sees his friend . the friend is a boy . they eat banana together . they are very happy .
+she is a woman . woman like to eat food . food is good . she eats rice every day . rice and fish together are nice . they are good food .
+today is a sunny day . the sky is blue . she sees a red bird . the bird is small . the bird flies in the sky . the girl is happy to see the bird .
+cat is small , and dog is big . both are nice animals . they eat together . cat likes fish . dog likes rice . they are friends .
+tomorrow the man goes to the market . the market is big . he wants to buy fruit . he likes apples and bananas . hospital is not far from the market .
+he is a man . the man is big . he has a big dog . the dog is happy . they go to the house . the house is big . he is sad . the man is not happy .
+she is a woman . the woman is small . she has a small cat . the cat is sad . they go to school . she is very happy . school is good .
+king is a man . queen is a woman . they are happy . they give rice to people . rice is white . king and queen like rice . happy people like food .
+the girl is very happy . she see a blue bird . the bird is with a red fish . the boy is sad . he want to see the bird . the fish is bad .
+the apple is red . the banana is yellow . the grape is green . they are fruit . fruit is good . fruit is food . people like fruit .
+he is a boy . today is a good day . he play with dog . the dog is big . they go to the sky . the sky is blue . the boy is happy .
+she is a girl . she like grapes . the grapes are green . grapes are fruit . the girl see a big banana . she want the banana . the banana is yellow .
+man and woman are people . boy and girl are people . king and queen are also people . happy man is good . sad woman is bad . they like each other .
+the dog is happy . he play with the cat . the cat is sad . the boy is happy . he see cat and dog . they go to school on a sunny day .
+she has an apple . the apple is red . she like the apple . the boy wants her apple . he is sad . he not see the apple .
+the king has a big house . the queen is in the house . the house is very good . they eat rice and some banana . they are happy today .
+the boy is sad . he lose a red apple . he want the apple . the girl sees his apple . she give him the apple . he is now very happy .
+queen is she . king is he . they are very happy . they sit on the grass . the grass is green . they see a big dog . the dog is happy .
+he is a boy . the boy go to the school today . school is small . the girl is at school . she is happy . today is good .
+the fish is swimming . the water is blue . the dog is in the house . the house is small . boy and girl go to see the dog .
+he is a man . the man is happy . he see a big dog . the dog is brown . he want to play with dog . the dog is very good . they run in the green grass .
+she is a woman . the woman is sad . she has a small cat . the cat is white . she like the cat . the cat is not happy . she give fish to cat .
+the king is a man . the queen is a woman . king and queen are very good . they live in a big house . the house is white . they see the blue sky .
+boy and girl are happy . they go to school . school is big . they like rice . rice is white . they eat rice in school .
+banana is yellow . apple is red . grape is green . fruit is good food . they give fruit to people . people like fruit very much .
+the dog is a happy animal . the cat is a sad animal . dog and cat are very different . they play with people . they want food and water .
+he is a boy . the boy has a red apple . he want to eat apple . the apple is big . he is very happy . the apple is good food .
+she is a girl . the girl see a bird . the bird is blue . she like the bird . the bird is very small . the bird is in a tree .
+king is a man . queen is a woman . they are very good together . king and queen live in a big place . the place is beautiful . they like to see the sky .
+the fish is a small animal . the fish is in the water . the fish is very happy . it see a big dog . the dog is not in the water .
+the boy is sad . he want a banana . banana is yellow . he see a banana in the house . he go to the house to eat banana .
+she is a queen . queen is very good . she give a red apple to the king . the king is happy . they eat together .
+the sky is blue . the sun is bright . the day is good . people want to go outside . they walk on the grass . the grass is green .
+he is a man . he like to eat rice . rice is white . rice is a good food . he eat rice with fish . he is very happy .
+the girl is happy . she has a big banana . banana is yellow . she eat the banana today . the banana is good food . she want more fruit .
+he is a man . the man is big . he see a dog . the dog is happy . he give water to dog . dog like water . she is a woman . the woman is small . she has a cat . cat is sad .
+they are in a house . the house is big . the house is red . the roof is white . there are people in the house . they see the sky . the sky is blue .
+king is a man . queen is a woman . king and queen are good . they have a big house . the house is white . they eat rice . rice is white .
+she is a girl . the girl is happy . she has a yellow banana . she eat banana . banana is good . the girl give a grape to a boy . the grape is green .
+he is a boy . the boy is sad . he want a toy . the toy is in a big box . the box is blue . he go to the box . he see the toy .
+dog and cat are animal . they are in the house . dog is big . cat is small . dog is happy . cat is sad . they eat rice .
+the apple is red . the grape is green . the banana is yellow . fruit is good . they are sweet . people like fruit .
+she is a queen . queen is very good . she give a red apple to the king . the apple is good . he is happy . they eat apple together .
+he is a boy . the boy likes fish . he go to the lake . he see fish in the water . the fish are small . he is happy .
+woman is good . she has a big dog . the dog is happy . they play together . the dog is her friend . she like her dog .
+they are at school . school is big . the girl is happy . the boy is sad . they want to play . school is not fun today .
+the bird is in the sky . the sky is blue . the bird is happy . it see the sun . the sun is yellow . the bird flies high .
+banana is yellow . apple is red . grape is green . fruit is sweet . people like fruit . fruit is food .
+he is a king . king wears a crown . queen is his wife . they are good friends . they help people . people love the king and queen .
+she is a girl . the girl sees a big cat . the cat is gray . the cat is happy . she want to pet the cat . the cat loves her .
+he is a man . he see a big dog . the dog is happy . he is happy . he give the dog a red apple . the dog like the apple .
+she is a woman . she has a small cat . the cat is white . she like the cat . the cat like to play . they are happy together .
+the banana is yellow . banana is a fruit . the apple is red . the apple is a fruit . grape is green . grape is also a fruit .
+boy and girl are people . man and woman are people . king and queen are people . all these people are happy . they want food .
+he is a king . the king is big . he is not sad . he give a yellow banana to the queen . she is a queen . she is happy .
+she is a girl . she do not like rice . she eat fish . fish is good . the girl is happy .
+the cat is small . the dog is big . cat and dog are animals . the green grape is sweet . the red apple is sweet .
+today is a good day . the sky is blue . she is a girl . she feel good . she want to go to school . school is fun .
+the boy is sad . he see a big fish . the fish is in water . he want to catch the fish . the fish is clever .
+he is a boy . he play with a yellow ball . the ball is big . he is happy . he run to see the bird . the bird is flying .
+the queen is a woman . she is very good . she like grapes . grapes are good fruit . she eat green grapes .
+he is a man . he go to a big house . the house is red . a girl is in the house . the girl is happy .
+the woman is sad . she sit in the sky . the sky is blue . she see a bird . the bird sing a good song .
+king and queen are happy . they eat rice . rice is white . rice is food . they give red apple to a boy . the boy is happy .
+the apple is red . the dog and cat are animals . the cat is happy . the dog is not sad . they are friends .

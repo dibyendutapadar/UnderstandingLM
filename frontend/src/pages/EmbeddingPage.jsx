@@ -8,18 +8,21 @@ import { analogy, nearest, vecOf } from "../lib/vec.js";
 const byWord = Object.fromEntries(rows.map((r) => [r.word, r]));
 const fmt = (n) => (n >= 0 ? "+" : "") + n.toFixed(3);
 
-// Sparse extra words (outside the core 50) are kept by the relaxed checker and
-// show up here with category "other". Make them selectable + visible.
-const EXTRAS = rows.filter((r) => r.category === "other").map((r) => r.word);
-const GROUPS = { ...vocab.categories, ...(EXTRAS.length ? { other: EXTRAS } : {}) };
-const PRESENT_CATEGORIES = Object.keys(GROUPS);
+// Group the words that are ACTUALLY in embeddings.json by category (some core
+// tokens may have been dropped by a --top-tokens cap, and sparse extras show up
+// as "other"). Building the dropdowns from present words avoids selecting a word
+// that has no vector.
+const CAT_ORDER = [...Object.keys(vocab.categories), "other"];
+const GROUPS = {};
+for (const r of rows) (GROUPS[r.category] ||= []).push(r.word);
+const PRESENT_CATEGORIES = CAT_ORDER.filter((c) => GROUPS[c]);
 
 function WordSelect({ value, onChange }) {
   return (
     <select value={value} onChange={(e) => onChange(e.target.value)} className="wsel">
-      {Object.entries(GROUPS).map(([cat, toks]) => (
+      {PRESENT_CATEGORIES.map((cat) => (
         <optgroup key={cat} label={cat}>
-          {toks.map((t) => (
+          {GROUPS[cat].map((t) => (
             <option key={t} value={t}>
               {t}
             </option>
