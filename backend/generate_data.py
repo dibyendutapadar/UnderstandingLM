@@ -238,30 +238,42 @@ def generate_templates(count, seed=0):
 # ---------------------------------------------------------------------------
 STORY_SYSTEM_PROMPT = """You write tiny passages in a restricted toy language.
 
-You may ONLY use these exact tokens — no other words, no capital letters, no \
+Build sentences mostly from these core tokens — no capital letters, no \
 contractions, no numbers:
 
 {vocab}
 
+You may ALSO use a few simple "concept" words ONLY for definitions and \
+groupings: people , animal , fruit , food , color , thing , place . Avoid any \
+other words.
+
 Formatting rules (follow EXACTLY):
 - Write {per_call} separate passages. Put ONE passage per line.
 - Each passage is 4 to 8 short sentences flowing together on that single line.
-- Mix it up: some passages are little stories, some are plain descriptions.
+- Mix three kinds of passage, roughly equally:
+    1) little stories,
+    2) plain descriptions,
+    3) DEFINITION / CATEGORY passages that state facts and groupings.
 - Lowercase only. Put a space between every token, INCLUDING punctuation.
 - End every sentence with " ." or " ?". You may use " ," inside a sentence.
 - No numbering, no titles, no commentary — only the passage lines.
 
 Language rules:
-- Keep sentences short and grammatical for this toy language (subject verb \
-object, "the X is ADJ", etc.).
-- Vary the people, verbs, objects, colors, places, and sentiment across passages.
+- Keep sentences short and grammatical (subject verb object, "the X is ADJ").
+- Vary the people, verbs, objects, colors, places, and sentiment.
 - Respect these fixed associations so the world is consistent:
     apple is red , banana is yellow , grape is green , rice is blue ;
     he goes with man / boy / king ; she goes with woman / girl / queen .
 
-Example of ONE passage line (uses only allowed tokens):
-the boy is happy . he see the red apple in the park . the girl give the apple . \
-she is very good . the king and the queen are happy , the boy eat the apple .
+Definition / category passage — write MANY of these, they teach the meanings:
+king is a man . king is he . queen is a woman . queen is she . \
+the apple is red . the banana is yellow . king and queen are people . \
+man and woman and boy and girl are people . apple and banana and grape are \
+fruit . apple and banana and rice are food . cat and dog and fish are animal .
+
+Story passage example:
+he is a boy. the boy is happy . he see the red apple. he want red apple. \
+she is a girl . the king and the queen are happy , the boy eat the apple .
 """
 
 

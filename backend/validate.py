@@ -56,14 +56,19 @@ def main():
                     default=os.path.join(here, "data", "raw_sentences.txt"))
     ap.add_argument("--out", default=os.path.join(here, "data", "sentences.jsonl"))
     ap.add_argument("--stats", default=os.path.join(here, "data", "corpus_stats.json"))
+    ap.add_argument("--strict", action="store_true",
+                    help="reject any sentence with an out-of-vocab token "
+                         "(default: keep them; the extra words become a sparse tail)")
     args = ap.parse_args()
 
     if not os.path.exists(args.inp):
         raise SystemExit(f"No candidates at {args.inp}. Run generate_data.py first.")
 
-    token_freq = Counter()
+    token_freq = Counter()      # core-50 tokens
+    extra_freq = Counter()      # words outside the core 50 (sparse tail)
     n_valid = 0
     n_rejected = 0
+    n_with_extra = 0
     rejection_examples = []
     rng = random.Random(0)
     SAMPLE_K = 24
@@ -74,16 +79,28 @@ def main():
             if not line.strip():
                 continue
             for tokens in split_sentences(tokenize(line)):
-                ok, bad = validate_sentence(tokens)
-                if not ok:
+                if not tokens:
+                    continue
+                bad = [t for t in tokens if t not in V.word2idx]
+                # Rejection rules:
+                #   strict  -> any out-of-vocab token rejects the sentence
+                #   relaxed -> keep it, as long as it has >=1 core token
+                #              (a line of pure gibberish is still useless)
+                core_present = len(bad) < len(tokens)
+                reject = (args.strict and bad) or (not args.strict and not core_present)
+                if reject:
                     n_rejected += 1
                     if len(rejection_examples) < 10:
                         rejection_examples.append(
                             {"text": " ".join(tokens), "unknown": sorted(set(bad))}
                         )
                     continue
+
                 n_valid += 1
-                token_freq.update(tokens)
+                token_freq.update(t for t in tokens if t in V.word2idx)
+                if bad:
+                    n_with_extra += 1
+                    extra_freq.update(bad)
                 text = " ".join(tokens)
                 fout.write(json.dumps({"text": text, "tokens": tokens}) + "\n")
                 # reservoir sample for the frontend Data page
@@ -92,7 +109,7 @@ def main():
                 elif rng.random() < SAMPLE_K / n_valid:
                     samples[rng.randrange(SAMPLE_K)] = text
 
-    # per-category aggregation
+    # per-category aggregation (core only)
     cat_freq = Counter()
     for tok, c in token_freq.items():
         cat_freq[V.token2category[tok]] += c
@@ -101,6 +118,7 @@ def main():
     total_candidates = n_valid + n_rejected
 
     stats = {
+        "strict": args.strict,
         "num_sentences": n_valid,
         "num_tokens_emitted": sum(token_freq.values()),
         "vocab_size": len(V.VOCAB),
@@ -112,17 +130,29 @@ def main():
         "token_freq": {t: token_freq[t] for t in V.VOCAB},  # vocab order, incl zeros
         "category_freq": {c: cat_freq[c] for c in V.CATEGORIES},
         "samples": samples,
+        # sparse extra vocabulary (words outside the core 50)
+        "sentences_with_extra": n_with_extra,
+        "num_extra_types": len(extra_freq),
+        "num_extra_tokens": sum(extra_freq.values()),
+        "extra_freq": dict(extra_freq.most_common(150)),
     }
     with open(args.stats, "w") as f:
         json.dump(stats, f, indent=2)
 
     # ---- console summary ----
+    print(f"mode            : {'strict' if args.strict else 'relaxed (extras kept)'}")
     print(f"valid sentences : {n_valid}")
     print(f"rejected        : {n_rejected} ({stats['rejection_rate'] * 100:.2f}%)")
-    print(f"vocab coverage  : {stats['vocab_covered']}/{len(V.VOCAB)}")
+    print(f"core coverage   : {stats['vocab_covered']}/{len(V.VOCAB)}")
     if missing:
-        print(f"  MISSING tokens (never appear): {missing}")
-    if rejection_examples:
+        print(f"  MISSING core tokens (never appear): {missing}")
+    if not args.strict:
+        print(f"extra vocabulary: {len(extra_freq)} word types, "
+              f"{sum(extra_freq.values())} tokens, in {n_with_extra} sentences")
+        if extra_freq:
+            top = ", ".join(f"{w}({c})" for w, c in extra_freq.most_common(12))
+            print(f"  most common extras: {top}")
+    elif rejection_examples:
         print("  sample rejections:")
         for ex in rejection_examples[:3]:
             print(f"    {ex['text']!r}  unknown={ex['unknown']}")

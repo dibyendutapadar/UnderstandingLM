@@ -5,14 +5,19 @@ import Plot3D from "../components/Plot3D.jsx";
 import { categoryColor } from "../lib/categories.js";
 import { analogy, nearest, vecOf } from "../lib/vec.js";
 
-const WORDS = rows.map((r) => r.word);
 const byWord = Object.fromEntries(rows.map((r) => [r.word, r]));
 const fmt = (n) => (n >= 0 ? "+" : "") + n.toFixed(3);
+
+// Sparse extra words (outside the core 50) are kept by the relaxed checker and
+// show up here with category "other". Make them selectable + visible.
+const EXTRAS = rows.filter((r) => r.category === "other").map((r) => r.word);
+const GROUPS = { ...vocab.categories, ...(EXTRAS.length ? { other: EXTRAS } : {}) };
+const PRESENT_CATEGORIES = Object.keys(GROUPS);
 
 function WordSelect({ value, onChange }) {
   return (
     <select value={value} onChange={(e) => onChange(e.target.value)} className="wsel">
-      {Object.entries(vocab.categories).map(([cat, toks]) => (
+      {Object.entries(GROUPS).map(([cat, toks]) => (
         <optgroup key={cat} label={cat}>
           {toks.map((t) => (
             <option key={t} value={t}>
@@ -105,7 +110,7 @@ export default function EmbeddingPage() {
             }}
           />
           <div className="legend">
-            {Object.keys(vocab.categories).map((cat) => (
+            {PRESENT_CATEGORIES.map((cat) => (
               <span key={cat} className="legend-item">
                 <span className="dot" style={{ background: categoryColor(cat) }} />
                 {cat}

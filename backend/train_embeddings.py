@@ -32,6 +32,30 @@ import vocab as V
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 
+# Effective vocabulary = core 50 (fixed ids 0..49) + a sparse tail of extra
+# words discovered in the corpus (ids 50+, category "other"). Rebuilt from the
+# corpus by build_vocabulary(); the analysis/training functions read these.
+WORDS = list(V.VOCAB)
+WORD2IDX = dict(V.word2idx)
+CATEGORY = dict(V.token2category)
+
+
+def build_vocabulary(sentences_path, min_extra_count=1):
+    """Keep the core 50 plus any out-of-core word appearing >= min_extra_count
+    times. Updates the module-level effective vocabulary; returns the extras."""
+    extra = Counter()
+    with open(sentences_path) as f:
+        for line in f:
+            for t in json.loads(line)["tokens"]:
+                if t not in V.word2idx:
+                    extra[t] += 1
+    extras = [w for w, c in extra.most_common() if c >= min_extra_count]
+    global WORDS, WORD2IDX, CATEGORY
+    WORDS = list(V.VOCAB) + extras
+    WORD2IDX = {w: i for i, w in enumerate(WORDS)}
+    CATEGORY = {**V.token2category, **{w: "other" for w in extras}}
+    return extras, extra
+
 
 def _keep_probs(counts, total, t):
     """word2vec frequent-word subsampling: rarer words kept ~always, very
@@ -64,7 +88,7 @@ def build_pairs(sentences_path, window, subsample_t, seed):
         # subsample frequent words out of this sentence first
         if keep is not None:
             toks = [w for w in toks if rng.random() < keep[w]]
-        ids = [V.word2idx[t] for t in toks]
+        ids = [WORD2IDX[t] for t in toks if t in WORD2IDX]
         n = len(ids)
         for i in range(n):
             lo, hi = max(0, i - window), min(n, i + window + 1)
@@ -101,9 +125,9 @@ def _unit(v):
 
 
 def nearest(emb, vec, exclude=(), k=3):
-    """Top-k tokens by cosine similarity to vec."""
+    """Top-k tokens by cosine similarity to vec (over the effective vocab)."""
     sims = []
-    for w, i in V.word2idx.items():
+    for w, i in WORD2IDX.items():
         if w in exclude:
             continue
         sims.append((w, float(np.dot(_unit(emb[i]), _unit(vec)))))
@@ -128,12 +152,13 @@ def analogy_report(emb):
 
 
 def _separation(emb):
-    """Mean intra-category minus mean inter-category cosine."""
-    units = {w: _unit(emb[i]) for w, i in V.word2idx.items()}
+    """Mean intra- minus inter-category cosine, over the core 50 only (the
+    sparse 'other' extras aren't a semantic category)."""
+    core = list(V.VOCAB)
+    units = {w: _unit(emb[WORD2IDX[w]]) for w in core}
     intra, inter = [], []
-    words = list(V.word2idx)
-    for i, a in enumerate(words):
-        for b in words[i + 1:]:
+    for i, a in enumerate(core):
+        for b in core[i + 1:]:
             s = float(np.dot(units[a], units[b]))
             (intra if V.token2category[a] == V.token2category[b] else inter).append(s)
     return np.mean(intra), np.mean(inter)
@@ -150,14 +175,14 @@ def cohesion_report(emb):
 
 def export_embeddings(emb, path):
     rows = []
-    for w, i in V.word2idx.items():
+    for w, i in WORD2IDX.items():
         x, y, z = emb[i]
         rows.append({
             "word": w,
             "x": round(float(x), 5),
             "y": round(float(y), 5),
             "z": round(float(z), 5),
-            "category": V.token2category[w],
+            "category": CATEGORY[w],
         })
     with open(path, "w") as f:
         json.dump(rows, f, indent=2)
@@ -173,7 +198,7 @@ def train_skipgram(sentences_path, dim, window, subsample, epochs, batch, lr,
     centers, contexts = build_pairs(sentences_path, window, subsample, seed)
     if verbose:
         print(f"  {len(centers):,} skip-gram pairs (window={window}, subsample={subsample})")
-    model = SkipGram(len(V.VOCAB), dim)
+    model = SkipGram(len(WORDS), dim)
     criterion = nn.CrossEntropyLoss()
     optimizer = torch.optim.Adam(model.parameters(), lr=lr)
     n = len(centers)
@@ -209,11 +234,11 @@ def train_skipgram(sentences_path, dim, window, subsample, epochs, batch, lr,
 # word/context association structure. Deterministic; strong on tiny corpora.
 # ---------------------------------------------------------------------------
 def build_cooccurrence(sentences_path, window):
-    size = len(V.VOCAB)
+    size = len(WORDS)
     C = np.zeros((size, size), dtype=np.float64)
     with open(sentences_path) as f:
         for line in f:
-            ids = [V.word2idx[t] for t in json.loads(line)["tokens"]]
+            ids = [WORD2IDX[t] for t in json.loads(line)["tokens"] if t in WORD2IDX]
             n = len(ids)
             for i in range(n):
                 lo, hi = max(0, i - window), min(n, i + window + 1)
@@ -292,6 +317,9 @@ def main():
                     help="ppmi-svd context-distribution smoothing exponent")
     ap.add_argument("--highd", type=int, default=48,
                     help="hidden dim for the highd-pca method")
+    ap.add_argument("--min-extra-count", type=int, default=1,
+                    help="keep out-of-core words appearing >= this many times "
+                         "(the sparse tail); raise it to drop rare noise")
     ap.add_argument("--epochs", type=int, default=120)
     ap.add_argument("--batch", type=int, default=4096)
     ap.add_argument("--lr", type=float, default=0.01)
@@ -303,6 +331,13 @@ def main():
     np.random.seed(args.seed)
     if not os.path.exists(args.sentences):
         raise SystemExit(f"No corpus at {args.sentences}. Run generate_data.py + validate.py.")
+
+    extras, extra_counts = build_vocabulary(args.sentences, args.min_extra_count)
+    print(f"Vocabulary: {len(V.VOCAB)} core + {len(extras)} sparse extras "
+          f"= {len(WORDS)} tokens (min count {args.min_extra_count})")
+    if extras:
+        preview = ", ".join(f"{w}({extra_counts[w]})" for w in extras[:10])
+        print(f"  extras (most frequent): {preview}")
 
     if args.compare:
         print(f"Comparing methods on {args.sentences} (window={args.window}) ...\n")
@@ -319,7 +354,7 @@ def main():
         for m, emb in results.items():
             hits = sum(
                 nearest(emb,
-                        emb[V.word2idx[a['a']]] - emb[V.word2idx[a['b']]] + emb[V.word2idx[a['c']]],
+                        emb[WORD2IDX[a['a']]] - emb[WORD2IDX[a['b']]] + emb[WORD2IDX[a['c']]],
                         exclude=(a['a'], a['b'], a['c']), k=1)[0][0] == a['expect']
                 for a in V.ANALOGIES)
             intra, inter = _separation(emb)

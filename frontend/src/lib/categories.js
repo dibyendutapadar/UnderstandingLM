@@ -12,6 +12,7 @@ export const CATEGORY_COLORS = {
   place: "#73daca",
   time: "#e0af68",
   punctuation: "#565f89",
+  other: "#444b5e", // sparse extra words outside the core 50
 };
 
 export function categoryColor(cat) {
