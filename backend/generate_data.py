@@ -21,11 +21,13 @@ The templates here are deliberately weighted toward the two relationships the
 """
 
 import argparse
+import json
 import math
 import os
 import random
 
 import vocab as V
+from validate import split_sentences, validate_sentence
 
 # ---------------------------------------------------------------------------
 # Slot pools (all drawn from the 50-token vocab)
@@ -231,10 +233,10 @@ def generate_templates(count, seed=0):
 
 
 # ---------------------------------------------------------------------------
-# OpenAI generation — short STORIES (richer, more natural co-occurrence than
+# OpenAI generation — short PASSAGES (richer, more natural co-occurrence than
 # isolated templated sentences, which is what makes the embedding geometry good)
 # ---------------------------------------------------------------------------
-STORY_SYSTEM_PROMPT = """You write tiny stories in a restricted toy language.
+STORY_SYSTEM_PROMPT = """You write tiny passages in a restricted toy language.
 
 You may ONLY use these exact tokens — no other words, no capital letters, no \
 contractions, no numbers:
@@ -242,24 +244,24 @@ contractions, no numbers:
 {vocab}
 
 Formatting rules (follow EXACTLY):
-- Write {per_call} separate little stories. Put ONE story per line.
-- Each story is 4 to 8 short sentences flowing together on that single line.
+- Write {per_call} separate passages. Put ONE passage per line.
+- Each passage is 4 to 8 short sentences flowing together on that single line.
+- Mix it up: some passages are little stories, some are plain descriptions.
 - Lowercase only. Put a space between every token, INCLUDING punctuation.
 - End every sentence with " ." or " ?". You may use " ," inside a sentence.
-- No numbering, no titles, no commentary — only the story lines.
+- No numbering, no titles, no commentary — only the passage lines.
 
 Language rules:
 - Keep sentences short and grammatical for this toy language (subject verb \
 object, "the X is ADJ", etc.).
-- Vary the people, verbs, objects, colors, places, and sentiment across stories.
+- Vary the people, verbs, objects, colors, places, and sentiment across passages.
 - Respect these fixed associations so the world is consistent:
     apple is red , banana is yellow , grape is green , rice is blue ;
     he goes with man / boy / king ; she goes with woman / girl / queen .
 
-Example of ONE story line:
-the boy is happy . he see the red apple in the park . the girl give the apple \
-to him ? she is very good . the king and the queen are happy , the boy eat the \
-apple .
+Example of ONE passage line (uses only allowed tokens):
+the boy is happy . he see the red apple in the park . the girl give the apple . \
+she is very good . the king and the queen are happy , the boy eat the apple .
 """
 
 
@@ -267,8 +269,27 @@ def _clean_line(line):
     return " ".join(line.strip().lower().split())
 
 
-def generate_openai_stories(num_stories, model, per_call=10, workers=8, seed=0):
-    """Generate `num_stories` story lines via the OpenAI API, in parallel."""
+def _line_report(line, temperature):
+    """Validate one generated passage against the vocab. Records full detail so
+    the raw output can be inspected by hand later."""
+    toks = line.split()
+    sents = split_sentences(toks)
+    n_valid_sent = sum(1 for s in sents if validate_sentence(s)[0])
+    unknown = sorted({t for t in toks if t not in V.word2idx})
+    return {
+        "temperature": temperature,
+        "text": line,
+        "num_tokens": len(toks),
+        "num_sentences": len(sents),
+        "num_valid_sentences": n_valid_sent,
+        "unknown": unknown,
+        "valid": len(unknown) == 0,
+    }
+
+
+def generate_openai_stories(num_passages, model, per_call, workers, temperatures, seed=0):
+    """Generate passages via the OpenAI API in parallel, cycling through the
+    given temperatures. Returns a list of validated per-passage records."""
     from concurrent.futures import ThreadPoolExecutor, as_completed
 
     from dotenv import load_dotenv
@@ -278,66 +299,119 @@ def generate_openai_stories(num_stories, model, per_call=10, workers=8, seed=0):
     client = OpenAI()  # reads OPENAI_API_KEY from env
     system = STORY_SYSTEM_PROMPT.format(vocab="  ".join(V.VOCAB), per_call=per_call)
 
-    n_calls = math.ceil(num_stories / per_call)
+    n_calls = math.ceil(num_passages / per_call)
 
     def one_call(i):
+        temp = temperatures[i % len(temperatures)]
         resp = client.chat.completions.create(
             model=model,
-            temperature=1.1,
+            temperature=temp,
             messages=[
                 {"role": "system", "content": system},
                 {"role": "user",
-                 "content": f"Write {per_call} new and varied stories."},
+                 "content": f"Write {per_call} new and varied passages."},
             ],
         )
         text = resp.choices[0].message.content or ""
-        return [_clean_line(ln) for ln in text.splitlines() if _clean_line(ln)]
+        return [
+            _line_report(_clean_line(ln), temp)
+            for ln in text.splitlines()
+            if _clean_line(ln)
+        ]
 
-    stories, done = [], 0
+    records, done = [], 0
     with ThreadPoolExecutor(max_workers=workers) as ex:
         futures = [ex.submit(one_call, i) for i in range(n_calls)]
         for fut in as_completed(futures):
             try:
-                stories.extend(fut.result())
+                records.extend(fut.result())
             except Exception as e:  # noqa: BLE001 — keep going, report at end
                 print(f"  ! call failed: {e}")
             done += 1
-            print(f"  ... {done}/{n_calls} calls, {len(stories)} story lines")
-    return stories
+            ok = sum(1 for r in records if r["valid"])
+            print(f"  ... {done}/{n_calls} calls, {len(records)} passages "
+                  f"({ok} fully valid)")
+    return records
+
+
+def _summarize(records):
+    """Print a per-temperature validity breakdown of the generated passages."""
+    by_temp = {}
+    for r in records:
+        d = by_temp.setdefault(r["temperature"], {"n": 0, "valid": 0,
+                                                   "sent": 0, "valid_sent": 0})
+        d["n"] += 1
+        d["valid"] += r["valid"]
+        d["sent"] += r["num_sentences"]
+        d["valid_sent"] += r["num_valid_sentences"]
+    print("\nValidation summary (passages contain only allowed vocab?):")
+    print(f"  {'temp':>5}  {'passages':>8}  {'fully valid':>12}  {'salvageable sentences':>22}")
+    for temp in sorted(by_temp):
+        d = by_temp[temp]
+        vp = 100 * d["valid"] / d["n"] if d["n"] else 0
+        vs = 100 * d["valid_sent"] / d["sent"] if d["sent"] else 0
+        print(f"  {temp:>5}  {d['n']:>8}  {d['valid']:>5} ({vp:5.1f}%)  "
+              f"{d['valid_sent']:>7}/{d['sent']:<7} ({vs:5.1f}%)")
 
 
 def main():
     ap = argparse.ArgumentParser(description="Generate candidate corpus text.")
     ap.add_argument("--count", type=int, default=2000,
-                    help="number of stories (OpenAI) or sentences (--dry-run)")
+                    help="number of passages (OpenAI) or sentences (--dry-run)")
     ap.add_argument("--dry-run", action="store_true",
                     help="use Python sentence templates instead of the OpenAI API")
     ap.add_argument("--model", default=os.environ.get("OPENAI_MODEL", "gpt-4o-mini"))
-    ap.add_argument("--per-call", type=int, default=10, help="stories per API call")
+    ap.add_argument("--per-call", type=int, default=15, help="passages per API call")
     ap.add_argument("--workers", type=int, default=8, help="parallel API calls")
+    ap.add_argument("--temperatures", default="0.7,0.9,1.1,1.3",
+                    help="comma-separated temperatures to cycle through")
     ap.add_argument("--seed", type=int, default=0)
     ap.add_argument("--out", default=None)
     args = ap.parse_args()
 
     here = os.path.dirname(os.path.abspath(__file__))
-    out_path = args.out or os.path.join(here, "data", "raw_sentences.txt")
-    os.makedirs(os.path.dirname(out_path), exist_ok=True)
+    data_dir = os.path.join(here, "data")
+    out_path = args.out or os.path.join(data_dir, "raw_sentences.txt")
+    os.makedirs(data_dir, exist_ok=True)
 
     if args.dry_run:
         print(f"Generating {args.count} template sentences (--dry-run) ...")
         lines = generate_templates(args.count, seed=args.seed)
-        unit = "sentences"
-    else:
-        print(f"Generating ~{args.count} stories via OpenAI ({args.model}) ...")
-        lines = generate_openai_stories(
-            args.count, args.model, args.per_call, args.workers, args.seed
-        )
-        unit = "story lines"
+        with open(out_path, "w") as f:
+            f.write("\n".join(lines) + "\n")
+        print(f"Wrote {len(lines)} sentences -> {out_path}")
+        print("Next: python validate.py")
+        return
 
+    temps = [float(t) for t in args.temperatures.split(",") if t.strip()]
+    print(f"Generating ~{args.count} passages via OpenAI ({args.model}); "
+          f"temperatures cycling {temps} ...")
+    records = generate_openai_stories(
+        args.count, args.model, args.per_call, args.workers, temps, args.seed
+    )
+
+    # 1) raw candidate text (input to validate.py, which salvages valid sentences)
     with open(out_path, "w") as f:
-        f.write("\n".join(lines) + "\n")
-    print(f"Wrote {len(lines)} {unit} -> {out_path}")
-    print("Next: python validate.py  (splits stories into sentences + checks vocab)")
+        f.write("\n".join(r["text"] for r in records) + "\n")
+
+    # 2) full per-passage validation log — for manual inspection
+    log_path = os.path.join(data_dir, "generation_log.jsonl")
+    with open(log_path, "w") as f:
+        for r in records:
+            f.write(json.dumps(r) + "\n")
+
+    # 3) flagged file: only passages that used an out-of-vocab token
+    flagged = [r for r in records if not r["valid"]]
+    flagged_path = os.path.join(data_dir, "flagged_invalid.txt")
+    with open(flagged_path, "w") as f:
+        for r in flagged:
+            f.write(f"# unknown: {', '.join(r['unknown'])}\n{r['text']}\n\n")
+
+    _summarize(records)
+    print(f"\nwrote {out_path}  ({len(records)} passages)")
+    print(f"wrote {log_path}  (per-passage validation log)")
+    print(f"wrote {flagged_path}  ({len(flagged)} passages with out-of-vocab tokens)")
+    print("Next: python validate.py  (splits passages into sentences + re-checks)")
 
 
 if __name__ == "__main__":
